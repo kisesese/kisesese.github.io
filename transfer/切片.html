@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			#box{
+				width: 500px;
+				height: 300px;
+				margin: 100px auto;
+				position: relative;
+				overflow: hidden;
+				transition:0.5s;
+			}
+			ul{
+				width: 500px;
+				height: 300px;
+				position: absolute;
+				/*background-image: url(../特性/imgs/3.jpg);
+				background-size: 500px 300px;*/
+			}
+			ul li{
+				width: 250px;
+				height: 150px;
+				position: absolute;
+				background-image: url(./img/3.jpg);
+				transition: 0.5s;
+				background-size: 500px 300px;
+			}
+			li:nth-of-type(1){
+				top: 0;
+				left: 0;
+			}
+			li:nth-of-type(2){
+				top: 0;
+				right: 0;
+				background-position-x: -250px;
+			}
+			li:nth-of-type(4){
+				bottom: 0;
+				left: 0;
+				background-position-y: 150px;
+			}
+			li:nth-of-type(3){
+				bottom: 0;
+				right: 0;
+				background-position-y: -150px;
+				background-position-x: -250px;
+			}
+			span{
+				width: 500px;
+				height: 300px;
+				position: absolute;
+				border: 1px solid paleturquoise;
+				background-image: url(./img/15.jpg);
+				background-repeat: no-repeat;
+				background-size: 500px 300px;
+				transform: scale(1.5);
+				transition: 0.5s;
+				z-index: -10;
+			}
+			#box:hover span{
+				transform: scale(1);
+			}
+			
+			#box:hover ul li:nth-child(1) {
+				top: -300px;
+			}
+			
+			#box:hover ul li:nth-child(2) {
+				right: -300px;
+			}
+			
+			#box:hover ul li:nth-child(3) {
+				bottom: -300px;
+			}
+			
+			#box:hover ul li:nth-child(4) {
+				left: -300px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<span></span>
+			</ul>
+		</div>
+	</body>
+	<script src="../特性/libs/jquery-3.3.1.js"></script>
+	<!--<script type="text/javascript">
+		$(function(){
+			$("#box").mouseenter(function(){
+				$("li").eq(0).animate({
+					top:"-650px"
+				},2000)
+				$("li").eq(2).animate({
+					bottom:"-650px"
+				},2000)
+				$("li").eq(1).animate({
+					right:"-650px"
+				},2000)
+				$("li").eq(3).animate({
+					left:"-650px"
+				},2000)
+			})
+		})
+	</script>-->
+</html>

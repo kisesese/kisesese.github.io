@@ -1,0 +1,182 @@
+body,html{
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+.back{
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(90deg,papayawhip,mediumpurple);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform-style: preserve-3d;
+	perspective: 1500px;
+	/*transform: rotateX(30deg) rotateY(-30deg);*/
+}
+.card{
+	width: 300px;
+	height: 400px;
+	background-image: url(img/600x600.jpg);
+	border-radius: 20px;
+	background-size: 100% 100%;
+	position: relative;
+	text-align: center;
+	transform-style: preserve-3d;
+	transform-origin: center center 50px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	transition: all 2s linear;
+	transform: translateZ(185px) rotateX(0deg);
+	
+}
+.active{
+	transform: translateZ(185px) rotateX(60deg);
+	box-shadow: 0 10px 20px darkgray;
+	}
+.card:before,.card:after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 20px;
+}
+.card:before{
+	background-color: rgba(255,0,0,.12);
+	
+}
+.card:after{
+	background-color: rgba(0,0,0,.5);
+	transform: translateZ(-10px);
+	box-shadow: 0 20px 20px darkgray;
+}
+
+h2,p,h3,.box{
+	flex-basis: 100%;
+	color: white;
+}
+span{
+	display:inline-block;
+	width: 20px;
+	height: 20px;
+	color: black;
+	text-align: center;
+	transform: rotate(-45deg);
+	margin: 5px;
+	transform-style: preserve-3d;
+	position: relative;
+	perspective: 1500px;
+	transition: all 2s linear ;
+	
+}
+span:before,span:after{
+	display: block;
+	content: "";
+	position: absolute;
+left: 0;
+top: 0;
+	background: pink;
+	transition: all 2s linear;
+	text-align: right;
+	
+}
+span:before{
+	width: 0px;
+	height: 20px;
+	transform-origin: left;
+	transform: rotateY(-90deg);
+}
+span:after{
+	width: 20px;
+	height: 0px;
+	transform-origin: top;
+transform:rotateX(90deg) translateZ(-20px);
+}
+i{
+	display: block;
+	width: 20px;
+	height: 20px;
+	position: absolute;top: 0;
+	left: 0;
+	background: pink;
+	transform: translateZ(0px);
+	text-align: center;
+	transition: all 2s linear;
+	
+}
+h2,p,h3{
+	transform: translateZ(15px);
+	transition: all 2s linear;
+}
+/*label{
+	opacity: 0;
+}*/
+.action{
+	opacity: 0;
+}
+
+.active span:nth-of-type(1):before{
+	content: "20,000";
+	
+	width: 100px;
+}
+.active span:nth-of-type(1):after{
+	height: 100px;
+}
+.active span:nth-of-type(1) > i{
+	transform: translateZ(100px);
+}
+.active span:nth-of-type(2):before{
+	content: "10,000";
+	width: 200px;
+}
+.active span:nth-of-type(2):after{
+	height: 200px;
+}
+.active span:nth-of-type(2) > i{
+	transform: translateZ(200px);
+}
+.active span:nth-of-type(3):before{
+	content: "15,000";
+	width: 180px;
+}
+.active span:nth-of-type(3):after{
+	height: 180px;
+}
+.active span:nth-of-type(3) > i{
+	transform: translateZ(180px);
+}
+.active span:nth-of-type(4):before{
+	content: "24,000";
+	width: 200px;
+}
+.active span:nth-of-type(4):after{
+	height: 200px;
+}
+.active span:nth-of-type(4) > i{
+	transform: translateZ(200px);
+}
+.active span:nth-of-type(5):before{
+	content: "1,000";
+	width: 220px;
+}
+.active span:nth-of-type(5):after{
+	height: 220px;
+}
+.active span:nth-of-type(5) > i{
+	transform: translateZ(220px);
+}
+.active span:nth-of-type(6):before{
+	content: "7,000";
+	width: 250px;
+}
+.active span:nth-of-type(6):after{
+	height: 250px;
+}
+.active span:nth-of-type(6) > i{
+	transform: translateZ(250px);
+}

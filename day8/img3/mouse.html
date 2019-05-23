@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>打地鼠</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				width: 900px;
+				margin: 0 auto;
+			}
+			.box{
+				height: 600px;
+				border: 1px solid red;
+				position: relative;
+				/*gray*/
+				background-color: #6D6D6D;
+			}
+			div input{
+				width: 100px;
+				height: 30px;
+				border: none;
+				outline: none;
+				/*background-color: orange;*/
+				background: linear-gradient(to bottom, red, yellowgreen);
+				border-radius: 10px;
+			}
+			div input:nth-of-type(1){
+			   margin-left: 350px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box" class="box"></div>
+		<div>
+			<input type="button" value="开始"/>
+			<input type="button" value="暂停"/>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var flag = false
+		//定义一个数组,用于存放创建出来的所有的地鼠
+		var mouseArr = []
+		var btn01 = document.querySelectorAll("input")[0]
+		var btn02 = document.querySelectorAll("input")[1]
+		
+		// 点击开始按钮的时候执行
+		btn01.onclick = function(){
+			//  如果intervalId已经存在，则点击无效
+			// 也就是说，定时器存在的话，不会重复创建定时器
+			if(intervalId){
+				return
+			}
+			// 点击开始按钮，首先清空屏幕上的所有的地鼠和背景图
+			for (var i = 0;i < box.children.length;) {
+				box.removeChild(box.children[i])
+			}
+			if(this.value == '重新开始'){
+				this.value = '开始'
+				// 反复地创建地鼠
+				rePeatCreateMouse()
+				// 如果已经重新开始，则设置为可以【继续】【暂停】
+				flag = false
+			}else if(this.value == '开始'){
+				rePeatCreateMouse()
+				this.value = '重新开始'
+			}
+		}
+		//  点击暂停按钮的时候运行
+		btn02.onclick = function(){
+			if(flag){
+				// 如果已经结束，则无法再【继续】或者【暂停】
+				// 即点击无效
+				return
+			}
+			if(this.value == '暂停'){
+				clearInterval(intervalId)
+				this.value = '继续'
+				// 当暂停的时候，取消每一只地鼠的点击事件
+				for (var i = 0;i < mouseArr.length;i ++) {
+					mouseArr[i].onclick = null
+				}
+			}else{
+				// 反复地创建地鼠
+				rePeatCreateMouse()
+				this.value = '暂停'
+				// 当继续的时候，恢复每一只地鼠的点击事件
+				for (var i = 0; i < mouseArr.length; i++) {
+					mouseArr[i].onclick = function(){
+						// 把这个img标签从DOM元素中删除
+						this.parentElement.removeChild(this)
+					}
+				}
+			}
+		}
+		var intervalId
+		// 反复地创建地鼠函数
+		function rePeatCreateMouse(){
+			// 设置定时器，每隔500ms创建一只地鼠
+			intervalId = window.setInterval(function(){
+				// 创建地鼠
+				var mouse = createMouse()
+				// 每创建一只地鼠，就把它压栈到mouseArr数组中
+				mouseArr.push(mouse)
+				var left = randomInt(0, 800)
+				var top = randomInt(0, 500)
+				mouse.style.left = left + 'px'
+				mouse.style.top = top + 'px'
+				box.appendChild(mouse)
+				// 游戏是否结束
+				judgeGameOver()
+			}, 500)
+		}
+		// 决定游戏是否结束
+		function judgeGameOver(){
+			var mouseCount = box.childElementCount
+			// 如果地鼠数量大于等于10的话，就【结束游戏】
+			if(mouseCount >= 10){
+				// 结束周期任务
+				window.clearInterval(intervalId)
+				console.log(intervalId)
+				intervalId = 0
+				// 清空所有的地鼠
+				for (var i = 0;i < mouseCount;i ++) {
+					box.removeChild(box.children[0])
+				}
+				// 结束图片
+				var endImg = document.createElement("img")
+				endImg.style.position = 'absolute'
+				endImg.className ='end'
+				endImg.src = 'img/end.png'
+				endImg.onclick = null
+				endImg.style.width = '500px'
+				endImg.style.height = '500px'
+				endImg.style.left = '250px'
+				box.appendChild(endImg)
+				// 如果游戏已经结束，则将flag设置为true
+				flag = true
+				// 如果游戏已经结束，则将btn01设置为【重新开始】
+				btn01.value = '重新开始'
+			}
+		}
+		// 生成随机整数   3---5
+		function randomInt(m, n){
+		  // 【Math.random()】函数产生的是[0,1）范围内的小数
+		  // [0,1) * 3 === [0，3)+3=====[3,6)  5.99===>5
+		  // [3,5]
+		  return parseInt(Math.random() * (n - m + 1) + m)
+		}
+		// 创建地鼠
+		function createMouse(){
+			var mouseImg = document.createElement("img")
+			mouseImg.setAttribute("src", "img/mouse.png")
+			mouseImg.style.width = '100px'
+			mouseImg.style.height = '100px'
+			mouseImg.style.position = 'absolute'
+			// 给每个生成的地鼠设置点击事件
+			mouseImg.onclick = function(){
+				// 把这个img标签从DOM元素中删除
+				this.parentElement.removeChild(this)
+			}
+			return mouseImg
+		}
+	</script>
+</html>

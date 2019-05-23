@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.top{
+				width: 400px;
+				height: 300px;
+				/*border-radius: 50%;*/
+				position: relative;
+				margin: auto;
+				transform-style: preserve-3d;
+			}
+			.box{
+				width: 300px;
+				height: 300px;
+				border-radius: 50%;
+				border:5px solid gainsboro;
+				
+				position: absolute;
+				background-image: url(img/img-afe9b3e4d25142c076df1bba9f443f29.jpg);
+				background-size: 100% 100%;
+				
+			}
+			.border{
+				width: 300px;
+				height: 300px;
+				border-radius: 50%;
+				display: flex;
+				flex-wrap: wrap;
+				position: absolute;
+				background-color: rgba(0,0,0,.3);
+				left: -1000px;
+				top: 0;
+				text-align: center;
+				align-content: center;
+				
+			}
+			@keyframes leave1{
+				from{
+					transform: translateZ(-5px);
+				left: 0px;
+				}
+				to{
+					transform: translateZ(-5px);
+				left: -1000px;
+				}
+			}
+			@keyframes leave{
+				from{
+					transform: scale(0.5) translateZ(20px);
+				left: 150px;
+				}
+				to{
+					transform: scale(1) translateZ(20px);
+				left: 0px;
+				}
+			}
+			h3,p{
+				flex-basis: 100%;
+			}
+			@keyframes romes1{
+				from{
+					transform: translateZ(-5px);
+				left: -600px;
+				}
+				to{
+					transform: translateZ(-5px);
+				left: 0px;
+				}
+			}
+			@keyframes romes{
+				from{
+					transform: scale(1) translateZ(20px);
+				left: 0px;
+				}
+				to{
+					transform: scale(0.5) translateZ(20px);
+				left: 150px;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="top">
+			<div class="box">
+
+			</div>
+			<div class="border">
+				<h3>Heading here</h3>
+				<p>Description goes here</p>
+			</div>
+		</div>
+	</body>
+<script type="text/javascript">
+	var top = document.querySelector(".top");
+	var box = document.querySelector(".box");
+	var border = document.querySelector(".border");
+	box.onmousemove = function(){
+		
+		box.style.animation='romes 1s linear 1s forwards';
+		border.style.animation = 'romes1 2s linear  forwards';
+	}
+	border.onmouseleave = function(){
+		box.style.animation = 'leave 1s linear  forwards';
+		border.style.animation = 'leave1 1s linear  forwards';
+	}
+</script>
+</html>

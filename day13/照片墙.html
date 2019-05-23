@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="{CHARSET}">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+				list-style: none;
+			}
+			body ul{
+				width: 100%;
+				height:100%;
+				
+			}
+			#ps{
+				position: relative;
+			}
+			ul li,img {
+				width: 300px;
+				height: 360px;
+				position: absolute;
+				box-shadow: 0 0 10px gray;
+				transition: all 1s;
+			}
+			.current{
+				top: 100% !important;
+				left: 50% !important;
+				transform: rotate(0deg) translate(-50%,50%) scale(1.5,1.5) !important;
+				z-index: 99;
+			}
+		</style>
+	</head>
+	<body>
+		<ul id="ps"></ul>
+	</body>
+	<script type="text/javascript">
+		window.onload = function(){
+			for (var i = 0 ; i < 14 ; i ++) {
+				var ps = document.getElementById("ps");
+				var li = document.createElement("li");
+				ps.appendChild(li);
+				var img = document.createElement("img");
+				img.src = 'imgs/'+( i + 1) +'.jpg';
+				li.appendChild(img);
+				var allLis = ps.children;
+			}
+			var W = document.documentElement.clientWidth - 300 ; 
+			var H = document.documentElement.clientHeight - 360 ; 
+			for (var i = 0 ; i < allLis.length ; i ++) {
+				var li = allLis[i];
+				li.style.left = rad(0,W) + "px";
+				li.style.top = rad(0,H) + "px";
+				li.style.transform = 'rotate('+rad(0,360)+'deg)';
+				li.onclick = function(){
+					for (var j = 0 ; j < allLis.length ; j ++) {
+						allLis[j].className = "";
+					}
+					this.className = "current";
+				}
+			}
+			function rad(num,num1){
+				return parseInt(Math.random()*(num1 - num) + num)
+			}
+			
+		}
+	</script>
+</html>

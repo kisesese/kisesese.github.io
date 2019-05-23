@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/jquery-3.3.1.js"></script>
+		<script src="js/awardRotate.js"></script>
+		<script src="js/大转盘.js"></script>
+		<style type="text/css">
+			#bag {
+				width: 650px;
+				height: 600px;
+				position: relative;
+				background-image: url(img/lottery-turntable-bg.jpg);
+				margin: auto;
+			}
+			
+			#img1 {
+				width: 450px;
+				height: 450px;
+				position: absolute;
+				top: 60px;
+				left: 120px;
+			}
+			
+			#img2 {
+				width: 174px;
+				height: 228px;
+				position: absolute;
+				top: 150px;
+				left: 255px;
+				background-image: url(img/lottery-pointer.png);
+				transform-origin: center;
+			}
+			
+			#alret {
+				position: absolute;
+				width: 200px;
+				height: 100px;
+				background-color: rgba(0, 0, 0, .5);
+				top: 35%;
+				left: 40%;
+				text-align: center;
+				line-height: 50px;
+				color: white;
+				display: none;
+			}
+			
+			sub {
+				width: 50px;
+				height: 20px;
+				position: absolute;
+				top: -10px;
+				right: -25px;
+				font-size: 25px;
+				font-weight: bold;
+				color: black;
+				transform-style: preserve-3d;
+				transform: rotate(45deg);
+			}
+			
+			#name {
+				position: absolute;
+				top: 200px;
+				right: 100px;
+				text-align: center;
+			}
+			
+			#ul{
+				width: 100px;
+				height: 250px;
+				border: 1px solid gray;
+				
+				overflow: hidden;
+			}
+			ul{
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="bag">
+			<div id="img1">
+				<img src="img/lottery-turntable.png">
+			</div>
+			<div id="img2">
+				<!--<img src="img/lottery-pointer.png" >-->
+			</div>
+			<div id="alret">
+				<p>很遗憾你没有中奖</p>
+				<sub>+</sub>
+			</div>
+		</div>
+		<div id="name">
+			<p>用户</p>
+			<div id="ul">
+				<ul>
+				<li>182****3446</li>
+				<li>193*****464</li>
+				<li>158*****343</li>
+				<li>145*****436</li>
+				<li>132*****678</li>
+				<li>113*****356</li>
+				<li>114*****456</li>
+				<li>182****3443</li>
+				<li>193*****464</li>
+				<li>158*****343</li>
+				<li>145*****436</li>
+				<li>132*****678</li>
+				<li>113*****356</li>
+				<li>114*****456</li>
+			</ul>
+			</div>
+			
+		</div>
+	</body>
+
+</html>

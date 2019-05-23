@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				background-color: #000000;
+			}
+			span{
+				width: 20px;
+				height: 20px;
+				background: url(img/110.png) no-repeat;
+				position: absolute;
+				background-size: 100% 100%;
+				/*使图形闪动*/
+				animation: falsh 1s alternate infinite;
+			}
+			/*自定义动画*/
+			@keyframes falsh{
+				0%{opacity: 0;}
+				100%{opacity: 1;}
+			}
+			span:hover{
+				transition: all 2s; 
+				transform: scale(3,3) rotate(300deg)!important;
+			}
+		</style>
+	</head>
+	<body>
+		
+	</body>
+	<script type="text/javascript">
+		var w = document.documentElement.clientWidth;
+		var h = document.documentElement.clientHeight;
+		for (var i = 0 ; i < 100 ; i ++) {
+			var span = document.createElement("span");
+			document.body.appendChild(span);
+			var spanLeft = parseInt(Math.random() * w);
+			var spanTop = Math.random() * h;
+			span.style.left = spanLeft + "px";
+			span.style.top = spanTop + "px";
+			var scale = Math.random() * 1.5 ;
+			span.style.transform = 'scale('+ scale +','+ scale +')';
+			var rate = Math.random() * 1.5 ;
+			span.style.animationDelay = rate + "s";
+		}
+	</script>
+</html>

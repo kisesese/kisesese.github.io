@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.back{
+				width: 100%;
+				height: 700px;
+				background-image: url(images/background.jpg);
+				background-size: 100% 100%;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+			}
+			.back > div{
+				width: 300px;
+				height: 300px;
+				transform-style: preserve-3d;
+				position: relative;
+				transition: all 800ms ease;
+			}
+			
+			.img{
+				width: 100%;
+				height: 100%;
+				background-size: 100% 100%;
+				position: absolute;
+				top: 0;
+			}
+			.img1{
+				background-image: url(images/1.jpg);
+				
+			}
+			.img2{
+				background-image: url(images/2.jpg);
+			}
+			.img3{
+				background-image: url(images/3.jpg);
+			}
+			.text{
+				width: 100%;
+				height: 100%;
+				line-height: 300px;
+				background-color: rgba(0,0,0,.5);
+				text-align: center;
+				position: absolute;
+				top: 0;
+				transform: rotateY(90deg);
+			}
+			.box:hover{
+				transform: rotateX(0deg) rotateY(-90deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="back">
+			<div class="box">
+				<div class="img img1"></div>
+				<div class="text">
+					<p>gdgvjfdhusnjx</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="img img2"></div>
+				<div class="text">
+					<p>gdgvjfdhusnjx</p>
+				</div>
+			</div>
+			<div class="box">
+				<div class="img img3"></div>
+				<div class="text">
+					<p>gdgvjfdhusnjx</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

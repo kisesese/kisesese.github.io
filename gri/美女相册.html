@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				font-family: "Helvetica", "Arial", serif;
+				color: #333;
+				background-color: #ccc;
+			}
+			h2{
+				margin: 50px;
+			}
+			ul,li{
+				list-style: none;
+				float: left;
+				margin:0 0 0 20px ;
+			}
+			img{
+				width: 200px;
+				height: 100px;
+			}
+			div{
+				width: 600px;
+				height: 400px;
+				text-align: center;
+				line-height: 400px;
+				font-size: 30px;
+				margin:180px 0 0 70px;
+			}
+			p{
+				margin-left: 70px;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>美女相册</h2>
+		<ul>
+			<li>
+				<a title="美女1">
+					<img src="img/QQ图片20190102184151.jpg" />
+				</a>
+			</li>
+			<li>
+				<a title="美女2">
+					<img src="img/QQ图片20190102184228.jpg" />
+				</a>
+			</li>
+			<li>
+				<a title="美女3">
+					<img src="img/QQ图片20190202202847.jpg" />
+				</a>
+			</li>
+		</ul>
+		<div>
+			<label>600×400</label>
+		</div>
+		<p>选择一个图片</p>
+	</body>
+	<script src="../libs/jquery-3.3.1.js"></script>
+	<script>
+		$(function(){
+			$("li").click(function(){
+				$("div").empty();
+				$(this).find("img").clone()
+				$(this).find("img").clone().css({
+					width:600,
+					height:400
+				}).appendTo("div");
+				$("p").text($(this).find("a").attr("title"));
+			})
+		})
+	</script>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				background: url(img/1.jpg) no-repeat;
+				background-size: cover ;
+			}
+			#box{
+				background-color: rgba(255, 182, 193,.5);
+			}
+			#box ul{
+				display: flex;
+				justify-content: space-around;
+				text-align: center;
+			}
+			#box ul li{
+				list-style:none;
+				margin: 10px 0;
+				cursor: pointer;
+			}
+			img{
+				width: 160px;
+				height: 130px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<ul>
+				<li>
+					<img src="img/1.jpg" />
+				</li>
+				<li>
+					<img src="img/2.jpg" />
+				</li>
+				<li>
+					<img src="img/3.jpg" />
+				</li>
+				<li>
+					<img src="img/4.jpg" />
+				</li>
+				<li>
+					<img src="img/5.jpg" />
+				</li>
+				<li>
+					<img src="img/6.jpg" />
+				</li>
+				<li>
+					<img src="img/7.jpg" />
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var arr = ["img/1.jpg","img/2.jpg","img/3.jpg","img/4.jpg","img/5.jpg","img/6.jpg"]
+		var num = 0;
+		setInterval(function(){
+			num %= arr.length;
+			document.body.style.background = 'url('+arr[num]+') no-repeat';
+			document.body.style.backgroundSize="cover";
+			num++;
+		},2000)
+		//方法一 轮播
+//		function num1(){
+//			var num =parseInt(Math.random()*6);
+//			console.log(num);
+//			document.body.style.background = 'url('+arr[num]+') no-repeat';
+//			document.body.style.backgroundSize="cover";
+//		}
+//		setInterval(num1,2000);
+//		当鼠标进去li时，body的背景图片随着它进入的里变化而变化
+//		var bodys=document.getElementsByTagName("body");
+		var lis = document.getElementsByTagName("li");
+		for (var i = 1 ; i < lis.length ; i++) {
+			var li = lis[i];
+			li.index = i + 1;
+			li.onmousemove=function(){
+				console.log(this.index);
+				document.body.style.background='url("img/'+this.index+'.jpg") no-repeat';
+				document.body.style.backgroundSize="cover";
+				
+			}
+		}
+
+	</script>
+</html>

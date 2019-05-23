@@ -1,0 +1,1218 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.nav {
+  position: relative;
+  width: 1345px;
+  height: 500px;
+  box-sizing: border-box;
+  background-image: url(https://img.crawler.qq.com/lolwebschool/0/JAutoCMS_LOLWeb_7bbe99563e9914389322337f3c0477de/0);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.nav nav .nav-left {
+  width: 800px;
+  height: 78px;
+  list-style: none;
+  float: left;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.nav nav .nav-left h3 {
+  color: white;
+  font-size: 18px;
+  font-weight: normal;
+}
+.nav nav .nav-left label {
+  color: #aeaeae;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+.nav nav .nav-right {
+  box-sizing: border-box;
+  list-style: none;
+  float: right;
+  width: 400px;
+  height: 78px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  flex-grow: 1;
+}
+.nav nav .nav-right li:nth-of-type(1) {
+  flex-grow: 2;
+}
+.nav nav .nav-right li:nth-of-type(1) i {
+  display: block;
+  width: 23px;
+  height: 35px;
+  background-image: url(https://ossweb-img.qq.com/images/lol/v3/topfoot-spr.png);
+  background-position: 24px 145px;
+}
+.nav nav .nav-right li:nth-of-type(2) {
+  flex-grow: 1;
+}
+.nav nav .nav-right li:nth-of-type(2) i {
+  display: block;
+  width: 23px;
+  height: 32px;
+  background-image: url(https://ossweb-img.qq.com/images/lol/v3/topfoot-spr.png);
+  background-position: 53px 99px;
+}
+.nav nav .nav-right li:nth-of-type(3) {
+  flex-grow: 2;
+  display: flex;
+  margin-top: -10px;
+}
+.nav nav .nav-right li:nth-of-type(3) i {
+  display: block;
+  font-family: "fonteditor" !important;
+  width: 50px;
+  height: 55px;
+  background-image: url(https://ossweb-img.qq.com/images/lol/v3/topfoot-spr.png);
+  background-position: 100px 99px;
+}
+.nav nav .nav-right li:nth-of-type(3) i::before {
+  content: "";
+  display: block;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-position: 47px -16px;
+  margin-top: 15px;
+  margin-left: 9px;
+  background-image: url(../img/default.png);
+}
+.nav nav .nav-right li:nth-of-type(3) h4 {
+  text-align: center;
+  line-height: 55px;
+  color: white;
+  font-weight: normal;
+}
+.nav .details {
+  position: absolute;
+  left: 43%;
+  top: 85%;
+}
+.nav .details a {
+  display: block;
+  width: 180px;
+  height: 40px;
+  border: 1px solid #e6b236;
+  background-image: url(https://ossweb-img.qq.com/images/lol/v3/topfoot-spr.png);
+  background-position: 0px 100px;
+  text-align: center;
+  line-height: 40px;
+  text-decoration: none;
+  color: #e6b236;
+}
+.nav .edition {
+  font-size: 14px;
+  position: absolute;
+  display: flex;
+  width: 260px;
+  justify-content: space-between;
+  right: 10px;
+  top: 85%;
+}
+.nav .edition label {
+  color: #888787;
+}
+.nav .edition span {
+  color: #f5d185;
+}
+.nav .edition a {
+  display: block;
+  width: 90px;
+  height: 20px;
+  background-color: black;
+  font-size: 12px;
+  text-align: center;
+  line-height: 20px;
+  text-decoration: none;
+  color: #e6b236;
+  border: 2px solid transparent;
+  border-image: linear-gradient(to bottom, #6b5024 0, #b88d35 100%) 5 5;
+}
+section {
+  width: 1345px;
+  box-sizing: border-box;
+  background-color: rgba(238, 238, 238, 0.5);
+  height: 1200px;
+}
+section .x-mider {
+  height: 420px;
+}
+section .x-mider .carousel {
+  width: 820px;
+  height: 380px;
+  overflow: hidden;
+  margin-top: 40px;
+  margin-left: 40px;
+  position: relative;
+  float: left;
+}
+section .x-mider .carousel .img {
+  height: 340px;
+  position: absolute;
+  overflow: hidden;
+  list-style: none;
+}
+section .x-mider .carousel .sup {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+section .x-mider .carousel .sup li {
+  height: 40px;
+  background-color: #e3e2e2;
+  color: #424242;
+  font-size: 14px;
+  line-height: 40px;
+  flex-grow: 1;
+  text-align: center;
+}
+section .x-mider .carousel .sup .action {
+  color: #ab8e66;
+  border-bottom: 2px #cea861 solid;
+  background-color: #f7f6f6;
+}
+section .x-mider .sider-right {
+  height: 380px;
+  width: 450px;
+  float: right;
+  margin-top: 40px;
+  position: relative;
+}
+section .x-mider .sider-top {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px #e0e2e2 solid;
+  text-align: center;
+}
+section .x-mider .sider-top li {
+  width: 39px;
+  height: 35px;
+  line-height: 35px;
+  color: #676767;
+  font-size: 18px;
+}
+section .x-mider .sider-top .active {
+  color: #1da6ba;
+  font-weight: 700;
+}
+section .x-mider .sider-top .active::after {
+  content: "";
+  display: block;
+  width: 39px;
+  height: 10px;
+  margin-top: -6px;
+  background-image: url(https://ossweb-img.qq.com/images/lol/v3/comm-spr.png);
+  background-position: 120px 202px;
+}
+section .x-mider #colligate {
+  position: absolute;
+  width: 440px;
+  list-style: none;
+}
+section .x-mider #colligate li:nth-of-type(1) {
+  justify-content: center;
+  color: #0da0b4;
+  font-size: 20px;
+  line-height: 60px;
+  font-weight: 700;
+  height: 60px;
+  background-image: url(https://ossweb-img.qq.com/images/lol/v3/index-spr.png);
+  background-position: -50px 115px;
+}
+section .x-mider #colligate li {
+  transform-style: preserve-3d;
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px #e0e2e2 solid;
+}
+section .x-mider #colligate li label {
+  width: 36px;
+  height: 20px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 20px;
+}
+section .x-mider #colligate li a {
+  text-decoration: none;
+  color: #676767;
+}
+section .x-mider #colligate li label:nth-of-type(2) {
+  color: #9d9d9d;
+}
+section .x-mider #colligate li:nth-of-type(2) label:nth-of-type(1),
+section .x-mider #colligate li:nth-of-type(3) label:nth-of-type(1),
+section .x-mider #colligate li:nth-of-type(4) label:nth-of-type(1) {
+  color: #6388c5;
+  border: 1px #97afc5 solid;
+}
+section .x-mider #colligate li:nth-of-type(5) label:nth-of-type(1),
+section .x-mider #colligate li:nth-of-type(7) label:nth-of-type(1) {
+  color: #bb9a6c;
+  border: 1px #c5ab86 solid;
+}
+section .x-mider #colligate li:nth-of-type(6) label:nth-of-type(1) {
+  color: #e9852d;
+  border: 1px #e9852d solid;
+}
+section .x-mider #notice,
+section .x-mider #game,
+section .x-mider #strategy,
+section .x-mider #community {
+  position: absolute;
+  width: 440px;
+  list-style: none;
+}
+section .x-mider #notice li:nth-of-type(1),
+section .x-mider #game li:nth-of-type(1),
+section .x-mider #strategy li:nth-of-type(1),
+section .x-mider #community li:nth-of-type(1) {
+  justify-content: center;
+  color: #0da0b4;
+  font-size: 20px;
+  line-height: 60px;
+  font-weight: 700;
+  height: 60px;
+  background-image: url(https://ossweb-img.qq.com/images/lol/v3/index-spr.png);
+  background-position: -50px 115px;
+}
+section .x-mider #notice li,
+section .x-mider #game li,
+section .x-mider #strategy li,
+section .x-mider #community li {
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px #e0e2e2 solid;
+}
+section .x-mider #notice li label,
+section .x-mider #game li label,
+section .x-mider #strategy li label,
+section .x-mider #community li label {
+  width: 36px;
+  height: 20px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 20px;
+}
+section .x-mider #notice li a,
+section .x-mider #game li a,
+section .x-mider #strategy li a,
+section .x-mider #community li a {
+  text-decoration: none;
+  color: #676767;
+}
+section .x-mider #notice li label:nth-of-type(2),
+section .x-mider #game li label:nth-of-type(2),
+section .x-mider #strategy li label:nth-of-type(2),
+section .x-mider #community li label:nth-of-type(2) {
+  color: #9d9d9d;
+  border: none;
+}
+section .x-mider #notice li label {
+  color: #bb9a6c;
+  border: 1px #c5ab86 solid;
+}
+section .x-mider #game li label {
+  color: #6388c5;
+  border: 1px #97afc5 solid;
+}
+section .x-mider #strategy li label {
+  color: #4ba36a;
+  border: 1px #4ba36a solid;
+}
+section .x-mider #community li label {
+  color: #bb9a6c;
+  border: 1px #c5ab86 solid;
+}
+section .x-mider #colligate li:nth-of-type(8),
+section .x-mider #notice li:nth-of-type(8),
+section .x-mider #game li:nth-of-type(8),
+section .x-mider #strategy li:nth-of-type(8),
+section .x-mider #community li:nth-of-type(8) {
+  background-color: #e3e2e2;
+  justify-content: center;
+}
+section .x-mider #colligate li:nth-of-type(8) label,
+section .x-mider #notice li:nth-of-type(8) label,
+section .x-mider #game li:nth-of-type(8) label,
+section .x-mider #strategy li:nth-of-type(8) label,
+section .x-mider #community li:nth-of-type(8) label {
+  border: none;
+  width: 53px;
+  color: #676767;
+}
+section .x-mider #colligate li:nth-of-type(8) span,
+section .x-mider #notice li:nth-of-type(8) span,
+section .x-mider #game li:nth-of-type(8) span,
+section .x-mider #strategy li:nth-of-type(8) span,
+section .x-mider #community li:nth-of-type(8) span {
+  color: #7ea1a6;
+  font-size: 14px;
+}
+section .x-mider #colligate li:nth-of-type(8) i,
+section .x-mider #notice li:nth-of-type(8) i,
+section .x-mider #game li:nth-of-type(8) i,
+section .x-mider #strategy li:nth-of-type(8) i,
+section .x-mider #community li:nth-of-type(8) i {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(https://ossweb-img.qq.com/images/lol/v3/comm-spr.png);
+  background-position: 97px 110px;
+  animation: moves 1s infinite paused;
+}
+section .x-mider .activity {
+  width: 1360px;
+}
+section .x-mider .activity .campaign {
+  width: 820px;
+  height: 340px;
+}
+section .x-mider .activity .campaign .campaign-nav h3 {
+  font-size: 24px;
+}
+section .x-mider .activity .campaign .campaign-nav h3::before {
+  content: "";
+  background-color: #1da6ba;
+  height: 28px;
+  width: 5px;
+}
+section .x-mider .activity .campaign .campaign-nav ul {
+  border-bottom: 1px #e0e2e2 solid;
+}
+section .activity {
+  margin-top: 50px;
+  height: 375px;
+}
+section .activity .campaign {
+  position: relative;
+  float: left;
+  width: 800px;
+  height: 360px;
+  margin-left: 40px;
+}
+section .activity .campaign .campaign-nav {
+  width: 800px;
+  display: flex;
+  margin-top: 20px;
+}
+section .activity .campaign .campaign-nav h3 {
+  font-size: 24px;
+  width: 120px;
+  font-weight: normal;
+  box-sizing: border-box;
+}
+section .activity .campaign .campaign-nav h3::before {
+  content: "";
+  display: inline-block;
+  height: 28px;
+  width: 5px;
+  background-color: #1da6ba;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+section .activity .campaign .campaign-nav .campaign-top {
+  margin-left: 10px;
+  border-bottom: 1px #e0e2e2 solid;
+  display: flex;
+  list-style: none;
+  width: 691px;
+}
+section .activity .campaign .campaign-nav .campaign-top li {
+  width: 100px;
+  height: 39px;
+  line-height: 39px;
+  color: #181010;
+  font-size: 18px;
+  font-size: 16px;
+}
+section .activity .campaign .campaign-nav .campaign-top div {
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .activity .campaign .campaign-nav .campaign-top div a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #7ea1a6;
+}
+section .activity .campaign .campaign-nav .campaign-top div i {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(https://ossweb-img.qq.com/images/lol/v3/comm-spr.png);
+  background-position: 97px 110px;
+  animation: moves 1s infinite;
+}
+section .activity .campaign .campaign-nav .campaign-top .action {
+  color: #1da6ba;
+}
+section .activity .campaign .campaign-nav .campaign-top .action::after {
+  content: "";
+  display: block;
+  width: 67px;
+  height: 10px;
+  margin-top: -6px;
+  background-image: url(https://ossweb-img.qq.com/images/lol/v3/comm-spr.png);
+  background-position: 133px 202px;
+}
+section .activity .campaign #carry,
+section .activity .campaign #odds,
+section .activity .campaign #long {
+  position: absolute;
+  margin-top: 20px;
+}
+section .activity .campaign #carry ul,
+section .activity .campaign #odds ul,
+section .activity .campaign #long ul {
+  width: 800px;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+section .activity .campaign #carry ul li,
+section .activity .campaign #odds ul li,
+section .activity .campaign #long ul li {
+  width: 193px;
+  height: 280px;
+  background-color: #fefefe;
+  font-size: 12px;
+  position: relative;
+}
+section .activity .campaign #carry ul li img,
+section .activity .campaign #odds ul li img,
+section .activity .campaign #long ul li img {
+  width: 193px;
+  height: 209px;
+}
+section .activity .campaign #carry ul li p,
+section .activity .campaign #odds ul li p,
+section .activity .campaign #long ul li p {
+  color: #424242;
+  padding-left: 5px;
+}
+section .activity .campaign #carry ul li a,
+section .activity .campaign #odds ul li a,
+section .activity .campaign #long ul li a {
+  text-decoration: none;
+  color: #1da6ba;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+}
+section .activity .campaign #carry ul {
+  justify-content: flex-start;
+}
+section .activity .campaign #carry ul li {
+  margin-left: 20px;
+}
+section .activity .campaign #carry ul li:nth-of-type(1) {
+  margin-left: 0px;
+}
+section .activity .game {
+  width: 450px;
+  height: 360px;
+  float: right;
+}
+section .activity .game ul {
+  width: 450px;
+  height: 360px;
+  list-style: none;
+}
+section .activity .game ul li {
+  float: left;
+  margin-top: 20px;
+  margin-left: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+section .activity .game ul li i {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 2px;
+  animation: scale 1s paused;
+}
+section .activity .game ul li:nth-of-type(1) {
+  width: 300px;
+  height: 168px;
+  overflow: hidden;
+}
+section .activity .game ul li:nth-of-type(2),
+section .activity .game ul li:nth-of-type(3) {
+  width: 117px;
+  height: 75px;
+  line-height: 75px;
+  background-image: url(https://ossweb-img.qq.com/images/lol/v3/index-spr.png);
+  background-position: -193px -316px;
+  color: beige;
+  font-weight: 700;
+}
+section .activity .game ul li:nth-of-type(4),
+section .activity .game ul li:nth-of-type(5),
+section .activity .game ul li:nth-of-type(6),
+section .activity .game ul li:nth-of-type(7),
+section .activity .game ul li:nth-of-type(9),
+section .activity .game ul li:nth-of-type(10) {
+  line-height: 68px;
+  width: 100px;
+  height: 68px;
+  background-color: #fefefe;
+  font-size: 12px;
+}
+section .activity .game ul li:nth-of-type(4) i {
+  width: 25px;
+  height: 19px;
+  background-image: url(https://ossweb-img.qq.com/images/lol/v3/comm-spr.png);
+  background-position: -318px -12px;
+}
+section .activity .game ul li:nth-of-type(5) i {
+  width: 20px;
+  height: 20px;
+  background-image: url(https://ossweb-img.qq.com/images/lol/v3/comm-spr.png);
+  background-position: -193px -71px;
+}
+section .activity .game ul li:nth-of-type(6) i {
+  width: 20px;
+  height: 20px;
+  background-image: url(https://ossweb-img.qq.com/images/lol/v3/comm-spr.png);
+  background-position: -218px -71px;
+}
+section .activity .game ul li:nth-of-type(7) i {
+  width: 20px;
+  height: 20px;
+  background-image: url(https://ossweb-img.qq.com/images/lol/v3/comm-spr.png);
+  background-position: -264px -12px;
+}
+section .activity .game ul li:nth-of-type(9) i {
+  width: 20px;
+  height: 20px;
+  background-image: url(https://ossweb-img.qq.com/images/lol/v3/comm-spr.png);
+  background-position: -319px -71px;
+}
+section .activity .game ul li:nth-of-type(10) i {
+  width: 20px;
+  height: 20px;
+  background-image: url(https://ossweb-img.qq.com/images/lol/v3/comm-spr.png);
+  background-position: -375px -12px;
+}
+section .activity .game ul li:nth-of-type(8) i {
+  width: 20px;
+  height: 20px;
+  background-image: url(https://ossweb-img.qq.com/images/lol/v3/comm-spr.png);
+  background-position: -231px -12px;
+}
+section .activity .game ul li:nth-of-type(8) {
+  width: 200px;
+  height: 68px;
+  background-color: #fefefe;
+  line-height: 68px;
+}
+section .activity .game ul li:nth-of-type(4):hover,
+section .activity .game ul li:nth-of-type(5):hover,
+section .activity .game ul li:nth-of-type(6):hover,
+section .activity .game ul li:nth-of-type(7):hover,
+section .activity .game ul li:nth-of-type(9):hover,
+section .activity .game ul li:nth-of-type(10):hover,
+section .activity .game ul li:nth-of-type(8):hover {
+  color: #0da0b4;
+  box-shadow: 0 0 10px #ccc;
+}
+section .image {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+section .image .pho {
+  float: left;
+}
+section .image .pho ul {
+  width: 800px;
+  height: 240px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+section .image .pho ul li {
+  width: 380px;
+  height: 240px;
+  position: relative;
+}
+section .image .pho ul li a {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 20px;
+  display: block;
+  width: 63px;
+  height: 20px;
+  background-color: black;
+  color: #cdbe91;
+  font-size: 12px;
+}
+section .image .pho ul li img {
+  width: 380px;
+  height: 240px;
+  position: absolute;
+}
+section .image .pho ul li i {
+  display: block;
+  height: 100px;
+  position: absolute;
+  top: 120px;
+  background-image: url(https://ossweb-img.qq.com/images/lol/v3/pic-mask-0.png);
+}
+section .image .pho ul li p {
+  position: absolute;
+  left: 10px;
+}
+section .image .pho ul li p:nth-of-type(1) {
+  color: #cdbe91;
+  bottom: 33px;
+  font-weight: 700;
+}
+section .image .pho ul li p:nth-of-type(2) {
+  color: white;
+  bottom: 10px;
+  font-size: 14px;
+}
+section .image .edition {
+  width: 450px;
+  float: right;
+}
+section .image .edition .left {
+  float: left;
+  list-style: none;
+  height: 240px;
+  display: flex;
+  width: 200px;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+section .image .edition .left li,
+section .image .edition .left img {
+  width: 200px;
+  height: 110px;
+}
+section .image .edition .right {
+  width: 220px;
+  float: right;
+  list-style: none;
+  height: 240px;
+  margin-right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+section .image .edition .right li:nth-of-type(1) {
+  width: 220px;
+  height: 170px;
+  background-image: url(https://img.crawler.qq.com/lolwebschool/0/JAutoCMS_LOLWeb_51be27872e29ac01c08b27ff902f1c33/0);
+}
+section .image .edition .right li:nth-of-type(2) {
+  text-align: center;
+  line-height: 60px;
+  width: 220px;
+  height: 60px;
+  background-image: url(https://ossweb-img.qq.com/images/lol/v3/index-spr.png);
+  background-position: -193px -253px;
+}
+section .image .edition .right li:nth-of-type(2) span {
+  color: #fff;
+  width: 100px;
+}
+section .image .edition .right li:nth-of-type(2) span::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  background-image: url(https://ossweb-img.qq.com/images/lol/v3/index-spr.png);
+  background-position: -531px -226px;
+  margin-right: 10px;
+}
+section .image .edition .right li:nth-of-type(2) span::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  background-image: url(https://ossweb-img.qq.com/images/lol/v3/index-spr.png);
+  background-position: -506px -226px;
+  margin-left: 10px;
+}
+section .image .edition .right li:nth-of-type(2) span i {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(https://ossweb-img.qq.com/images/lol/v3/comm-spr.png);
+  background-position: -361px -43px;
+  vertical-align: middle;
+}
+.vision {
+  background-color: rgba(227, 226, 226, 0.5);
+  height: 500px;
+}
+.vision .video {
+  width: 800px;
+  height: 460px;
+  float: left;
+}
+.vision .video .recommend {
+  width: 800px;
+  height: 100px;
+  display: flex;
+  margin-left: 40px;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+.vision .video .recommend h3 {
+  font-size: 24px;
+  width: 120px;
+  font-weight: normal;
+  box-sizing: border-box;
+}
+.vision .video .recommend h3::before {
+  content: "";
+  display: inline-block;
+  height: 28px;
+  width: 5px;
+  background-color: #1da6ba;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.vision .video .recommend .recommend-top {
+  height: 39px;
+  border-bottom: 1px #e0e2e2 solid;
+  display: flex;
+  list-style: none;
+  width: 691px;
+  margin-left: 10px;
+}
+.vision .video .recommend .recommend-top li {
+  width: 100px;
+  height: 39px;
+  line-height: 39px;
+  color: #181010;
+  font-size: 18px;
+  font-size: 16px;
+}
+.vision .video .recommend .recommend-top div {
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vision .video .recommend .recommend-top div a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #7ea1a6;
+}
+.vision .video .recommend .recommend-top div i {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(https://ossweb-img.qq.com/images/lol/v3/comm-spr.png);
+  background-position: 97px 110px;
+  animation: moves 1s infinite;
+}
+.vision .video .recommend .recommend-top .action {
+  color: #1da6ba;
+}
+.vision .video .recommend .recommend-top .action::after {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 10px;
+  margin-top: -6px;
+  background-image: url(https://ossweb-img.qq.com/images/lol/v3/comm-spr.png);
+  background-position: 117px 202px;
+}
+.vision .video #recommendactio,
+.vision .video #figures,
+.vision .video #recreaction,
+.vision .video #match,
+.vision .video #instruction {
+  position: absolute;
+}
+.vision .video #recommendactio ul,
+.vision .video #figures ul,
+.vision .video #recreaction ul,
+.vision .video #match ul,
+.vision .video #instruction ul {
+  margin-left: 40px;
+  width: 800px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.vision .video #recommendactio ul li,
+.vision .video #figures ul li,
+.vision .video #recreaction ul li,
+.vision .video #match ul li,
+.vision .video #instruction ul li {
+  width: 190px;
+  height: 185px;
+  position: relative;
+}
+.vision .video #recommendactio ul li img,
+.vision .video #figures ul li img,
+.vision .video #recreaction ul li img,
+.vision .video #match ul li img,
+.vision .video #instruction ul li img {
+  width: 190px;
+  height: 107px;
+}
+.vision .video #recommendactio ul li p,
+.vision .video #figures ul li p,
+.vision .video #recreaction ul li p,
+.vision .video #match ul li p,
+.vision .video #instruction ul li p {
+  color: #424242;
+  font-size: 12px;
+}
+.vision .video #recommendactio ul li a,
+.vision .video #figures ul li a,
+.vision .video #recreaction ul li a,
+.vision .video #match ul li a,
+.vision .video #instruction ul li a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #919091;
+  position: absolute;
+  bottom: 15px;
+}
+.vision .video #recommendactio ul li a:nth-of-type(1),
+.vision .video #figures ul li a:nth-of-type(1),
+.vision .video #recreaction ul li a:nth-of-type(1),
+.vision .video #match ul li a:nth-of-type(1),
+.vision .video #instruction ul li a:nth-of-type(1) {
+  left: 0px;
+}
+.vision .video #recommendactio ul li a:nth-of-type(2),
+.vision .video #figures ul li a:nth-of-type(2),
+.vision .video #recreaction ul li a:nth-of-type(2),
+.vision .video #match ul li a:nth-of-type(2),
+.vision .video #instruction ul li a:nth-of-type(2) {
+  right: 0px;
+}
+.vision .video #recommendactio ul li:hover p,
+.vision .video #figures ul li:hover p,
+.vision .video #recreaction ul li:hover p,
+.vision .video #match ul li:hover p,
+.vision .video #instruction ul li:hover p {
+  color: #0da0b4;
+}
+.vision .special {
+  position: relative;
+  height: 460px;
+  float: right;
+}
+.vision .special .short {
+  width: 450px;
+  height: 100px;
+  display: flex;
+  margin-left: 40px;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+.vision .special .short h3 {
+  font-size: 24px;
+  width: 120px;
+  font-weight: normal;
+  box-sizing: border-box;
+}
+.vision .special .short h3::before {
+  content: "";
+  display: inline-block;
+  height: 28px;
+  width: 5px;
+  background-color: #1da6ba;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.vision .special .short .short-top {
+  height: 39px;
+  border-bottom: 1px #e0e2e2 solid;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 300px;
+  margin-left: 10px;
+}
+.vision .special .short .short-top li {
+  line-height: 39px;
+  color: #676767;
+  font-size: 16px;
+}
+.vision .special .short .short-top .action {
+  color: #1da6ba;
+}
+.vision .special .short .short-top .action::after {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 10px;
+  margin-top: -6px;
+  background-image: url(https://ossweb-img.qq.com/images/lol/v3/comm-spr.png);
+  background-position: 117px 202px;
+}
+.vision #mon {
+  position: absolute;
+}
+.vision #mon ul {
+  margin-left: 40px;
+  width: 450px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.vision #mon ul li {
+  position: relative;
+  width: 130px;
+  height: 300px;
+}
+.vision #mon ul li img {
+  width: 130px;
+  height: 222px;
+  position: absolute;
+}
+.vision #mon ul li h4 {
+  position: absolute;
+  top: 100px;
+  left: 30px;
+  color: white;
+  font-weight: 800;
+}
+.vision #mon ul li h5 {
+  position: absolute;
+  top: 120px;
+  left: 15px;
+  color: white;
+}
+.vision #mon ul li p {
+  position: absolute;
+  top: 230px;
+  color: #919091;
+  font-size: 12px;
+}
+.vision #mon ul li a {
+  position: absolute;
+  bottom: 0px;
+  text-decoration: none;
+  font-size: 12px;
+  color: #919091;
+}
+.vision #mon ul li a i {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-size: 100% 100%;
+  vertical-align: middle;
+}
+.vision #mon ul li:nth-of-type(1) a i {
+  background-image: url(https://shp.qpic.cn/cfwebcap/0/0f5da8363f1f148245274a76d81259fa/0?width=200&height=200);
+}
+.vision #mon ul li:nth-of-type(2) a i {
+  background-image: url(http://inews.gtimg.com/newsapp_ls/0/1316847452_200200/0);
+}
+.vision #mon ul li:nth-of-type(3) a i {
+  background-image: url(https://shp.qpic.cn/cfwebcap/0/bd51826bf4e586ce8ffceeec016c88ca/0?width=1085&height=1085);
+}
+.vision .btn {
+  position: absolute;
+  bottom: 5px;
+  left: 100px;
+  width: 300px;
+  height: 40px;
+  line-height: 40px;
+  color: #ab8e66;
+  font-size: 16px;
+  background-image: url(https://ossweb-img.qq.com/images/lol/v3/index-spr.png);
+  background-position: -14px -525px;
+  text-align: center;
+}
+.vision .btn i {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(https://ossweb-img.qq.com/images/lol/v3/comm-spr.png);
+  background-position: 414px 133px;
+  vertical-align: middle;
+}
+.hero {
+  float: left;
+  width: 1345px;
+  box-sizing: border-box;
+  background-color: rgba(227, 226, 226, 0.6);
+  height: 500px;
+}
+.hero .sup {
+  margin-left: 40px;
+  width: 1300px;
+  display: flex;
+  margin-top: 20px;
+}
+.hero .sup h3 {
+  font-size: 24px;
+  width: 120px;
+  font-weight: normal;
+  box-sizing: border-box;
+}
+.hero .sup h3::before {
+  content: "";
+  display: inline-block;
+  height: 28px;
+  width: 5px;
+  background-color: #1da6ba;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.hero .sup ul {
+  margin-left: 10px;
+  display: flex;
+  list-style: none;
+  width: 1100px;
+}
+.hero .sup ul li {
+  width: 120px;
+  height: 39px;
+  line-height: 39px;
+  color: #181010;
+  font-size: 18px;
+  font-size: 16px;
+}
+.hero .sup ul li i {
+  margin-right: 10px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(https://ossweb-img.qq.com/images/lol/v3/index-spr.png);
+  background-position: -406px -316px;
+  vertical-align: middle;
+}
+.hero .sup ul li:hover i {
+  background-position: -430px -316px;
+}
+.hero .sup ul div {
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .sup ul div a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #7ea1a6;
+}
+.hero .sup ul div i {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(https://ossweb-img.qq.com/images/lol/v3/comm-spr.png);
+  background-position: 97px 110px;
+  animation: moves 1s infinite;
+}
+.hero .allHero {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+.hero .allHero ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+.hero .allHero ul li {
+  margin-right: 10px;
+  width: 89px;
+  height: 130px;
+}
+.hero .allHero ul li p {
+  font-size: 12px;
+}
+.hero .allHero ul li img {
+  width: 80px;
+  height: 90px;
+}
+.foot {
+  float: left;
+  background-color: #e3e2e2;
+  width: 1345px;
+  box-sizing: border-box;
+  height: 300px;
+  color: #494949;
+}
+.foot .foot-left {
+  float: left;
+  width: 500px;
+  text-align: center;
+  line-height: 300px;
+}
+.foot .foot-left i {
+  display: inline-block;
+}
+.foot .foot-left i:nth-of-type(1) {
+  width: 189px;
+  height: 39px;
+  background-image: url(https://ossweb-img.qq.com/images/lol/v3/topfoot-spr.png);
+  background-position: -216px 0;
+}
+.foot .foot-left i:nth-of-type(2) {
+  width: 83px;
+  height: 56px;
+  background-image: url(https://ossweb-img.qq.com/images/lol/v3/topfoot-spr.png);
+  background-position: -216px -84px;
+}
+.foot .foot-right {
+  float: right;
+  list-style: none;
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  color: #9f9378;
+  height: 200px;
+}
+.foot .foot-right li {
+  font-size: 12px;
+  border-right: 1px solid gainsboro;
+  margin-right: 10px;
+  padding-right: 10px;
+}
+.foot .foot-right li:nth-of-type(8) {
+  border-right: 0px solid transparent;
+}
+.foot .foot-right li:nth-of-type(9),
+.foot .foot-right li:nth-of-type(10),
+.foot .foot-right li:nth-of-type(11),
+.foot .foot-right li:nth-of-type(12),
+.foot .foot-right li:nth-of-type(13),
+.foot .foot-right li:nth-of-type(14),
+.foot .foot-right li:nth-of-type(15),
+.foot .foot-right li:nth-of-type(16) {
+  border-right: 0px solid transparent;
+  width: 100%;
+}
+.foot .foot-right li:nth-of-type(14) a,
+.foot .foot-right li:nth-of-type(15) a {
+  text-decoration: none;
+  color: #9f9378;
+}

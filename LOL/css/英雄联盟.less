@@ -1,0 +1,1188 @@
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav {
+            position: relative;
+            width: 1345px;
+            height: 500px;
+            box-sizing: border-box;
+            background-image: url(https://img.crawler.qq.com/lolwebschool/0/JAutoCMS_LOLWeb_7bbe99563e9914389322337f3c0477de/0);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            nav {
+                .nav-left {
+                    width: 800px;
+                    height: 78px;
+                    list-style: none;
+                    float: left;
+                    display: flex;
+                    justify-content: space-around;
+                    margin-top: 20px;
+                    h3 {
+                        color: white;
+                        font-size: 18px;
+                        font-weight: normal;
+                    }
+                    label {
+                        color: #aeaeae;
+                        font-size: 11px;
+                        letter-spacing: 1px;
+                    }
+                }
+                .nav-right {
+                    box-sizing: border-box;
+                    list-style: none;
+                    float: right;
+                    width: 400px;
+                    height: 78px;
+                    display: flex;
+                    justify-content: space-around;
+                    margin-top: 20px;
+                    flex-grow: 1;
+                    li:nth-of-type(1) {
+                        flex-grow: 2;
+                        i {
+                            display: block;
+                            width: 23px;
+                            height: 35px;
+                            background-image: url(https://ossweb-img.qq.com/images/lol/v3/topfoot-spr.png);
+                            background-position: 24px 145px;
+                        }
+                    }
+                    li:nth-of-type(2) {
+                        flex-grow: 1;
+                        i {
+                            display: block;
+                            width: 23px;
+                            height: 32px;
+                            background-image: url(https://ossweb-img.qq.com/images/lol/v3/topfoot-spr.png);
+                            background-position: 53px 99px;
+                        }
+                    }
+                    li:nth-of-type(3) {
+                        flex-grow: 2;
+                        display: flex;
+                        margin-top: -10px;
+                        i {
+                            display: block;
+                            font-family: "fonteditor" !important;
+                            width: 50px;
+                            height: 55px;
+                            background-image: url(https://ossweb-img.qq.com/images/lol/v3/topfoot-spr.png);
+                            background-position: 100px 99px;
+                            &::before {
+                                content: "";
+                                display: block;
+                                height: 30px;
+                                width: 30px;
+                                border-radius: 50%;
+                                background-position: 47px -16px;
+                                margin-top: 15px;
+                                margin-left: 9px;
+                                background-image: url(../img/default.png)
+                            }
+                        }
+                        h4 {
+                            text-align: center;
+                            line-height: 55px;
+                            color: white;
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+            .details {
+                position: absolute;
+                left: 43%;
+                top: 85%;
+                a {
+                    display: block;
+                    width: 180px;
+                    height: 40px;
+                    border: 1px solid rgb(230, 178, 54);
+                    background-image: url(https://ossweb-img.qq.com/images/lol/v3/topfoot-spr.png);
+                    background-position: 0px 100px;
+                    text-align: center;
+                    line-height: 40px;
+                    text-decoration: none;
+                    color: rgb(230, 178, 54);
+                }
+            }
+            .edition {
+                font-size: 14px;
+                position: absolute;
+                display: flex;
+                width: 260px;
+                justify-content: space-between;
+                right: 10px;
+                top: 85%;
+                label {
+                    color: rgb(136, 135, 135);
+                }
+                span {
+                    color: rgb(245, 209, 133);
+                }
+                a {
+                    display: block;
+                    width: 90px;
+                    height: 20px;
+                    background-color: black;
+                    font-size: 12px;
+                    text-align: center;
+                    line-height: 20px;
+                    text-decoration: none;
+                    color: rgb(230, 178, 54);
+                    border: 2px solid transparent;
+                    border-image: linear-gradient(to bottom, #6b5024 0, #b88d35 100%) 5 5;
+                }
+            }
+        }
+        
+        section {
+            width: 1345px;
+            box-sizing: border-box;
+            background-color: rgba(238, 238, 238, 0.5);
+            height: 1200px;
+            .x-mider {
+                height: 420px;
+                .carousel {
+                    width: 820px;
+                    height: 380px;
+                    overflow: hidden;
+                    margin-top: 40px;
+                    margin-left: 40px;
+                    position: relative;
+                    float: left;
+                    .img {
+                        height: 340px;
+                        position: absolute;
+                        overflow: hidden;
+                        list-style: none;
+                    }
+                    .sup {
+                        width: 100%;
+                        position: absolute;
+                        bottom: 0px;
+                        display: flex;
+                        justify-content: space-around;
+                        list-style: none;
+                        li {
+                            height: 40px;
+                            background-color: #e3e2e2;
+                            color: #424242;
+                            font-size: 14px;
+                            line-height: 40px;
+                            flex-grow: 1;
+                            text-align: center;
+                        }
+                        .action {
+                            color: #ab8e66;
+                            border-bottom: 2px #cea861 solid;
+                            background-color: rgb(247, 246, 246);
+                        }
+                    }
+                }
+                .sider-right {
+                    height: 380px;
+                    width: 450px;
+                    float: right;
+                    margin-top: 40px;
+                    position: relative;
+                }
+                .sider-top {
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-around;
+                    border-bottom: 1px #e0e2e2 solid;
+                    text-align: center;
+                    li {
+                        width: 39px;
+                        height: 35px;
+                        line-height: 35px;
+                        color: #676767;
+                        font-size: 18px;
+                    }
+                    .active {
+                        color: #1da6ba;
+                        font-weight: 700;
+                        &::after {
+                            content: "";
+                            display: block;
+                            width: 39px;
+                            height: 10px;
+                            margin-top: -6px;
+                            background-image: url(https://ossweb-img.qq.com/images/lol/v3/comm-spr.png);
+                            background-position: 120px 202px;
+                        }
+                    }
+                }
+                #colligate {
+                    position: absolute;
+                    width: 440px;
+                    list-style: none;
+                    li:nth-of-type(1) {
+                        justify-content: center;
+                        color: #0da0b4;
+                        font-size: 20px;
+                        line-height: 60px;
+                        font-weight: 700;
+                        height: 60px;
+                        background-image: url(https://ossweb-img.qq.com/images/lol/v3/index-spr.png);
+                        background-position: -50px 115px;
+                    }
+                    li {
+                        transform-style: preserve-3d;
+                        display: flex;
+                        height: 40px;
+                        justify-content: space-between;
+                        align-items: center;
+                        border-bottom: 1px #e0e2e2 solid;
+                        label {
+                            width: 36px;
+                            height: 20px;
+                            text-align: center;
+                            font-size: 12px;
+                            line-height: 20px;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: #676767;
+                        }
+                        label:nth-of-type(2) {
+                            color: #9d9d9d;
+                        }
+                    }
+                    li:nth-of-type(2),
+                    li:nth-of-type(3),
+                    li:nth-of-type(4) {
+                        label:nth-of-type(1) {
+                            color: #6388c5;
+                            border: 1px #97afc5 solid;
+                        }
+                    }
+                    li:nth-of-type(5),
+                    li:nth-of-type(7) {
+                        label:nth-of-type(1) {
+                            color: #bb9a6c;
+                            border: 1px #c5ab86 solid;
+                        }
+                    }
+                    li:nth-of-type(6) {
+                        label:nth-of-type(1) {
+                            color: #e9852d;
+                            border: 1px #e9852d solid;
+                        }
+                    }
+                }
+                #notice,
+                #game,
+                #strategy,
+                #community {
+                    position: absolute;
+                    width: 440px;
+                    list-style: none;
+                    li:nth-of-type(1) {
+                        justify-content: center;
+                        color: #0da0b4;
+                        font-size: 20px;
+                        line-height: 60px;
+                        font-weight: 700;
+                        height: 60px;
+                        background-image: url(https://ossweb-img.qq.com/images/lol/v3/index-spr.png);
+                        background-position: -50px 115px;
+                    }
+                    li {
+                        display: flex;
+                        height: 40px;
+                        justify-content: space-between;
+                        align-items: center;
+                        border-bottom: 1px #e0e2e2 solid;
+                        label {
+                            width: 36px;
+                            height: 20px;
+                            text-align: center;
+                            font-size: 12px;
+                            line-height: 20px;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: #676767;
+                        }
+                        label:nth-of-type(2) {
+                            color: #9d9d9d;
+                            border: none;
+                        }
+                    }
+                }
+                #notice {
+                    li {
+                        label {
+                            color: #bb9a6c;
+                            border: 1px #c5ab86 solid;
+                        }
+                    }
+                }
+                #game {
+                    li {
+                        label {
+                            color: #6388c5;
+                            border: 1px #97afc5 solid;
+                        }
+                    }
+                }
+                #strategy {
+                    li {
+                        label {
+                            color: #4ba36a;
+                            border: 1px #4ba36a solid;
+                        }
+                    }
+                }
+                #community {
+                    li {
+                        label {
+                            color: #bb9a6c;
+                            border: 1px #c5ab86 solid;
+                        }
+                    }
+                }
+                #colligate li:nth-of-type(8),
+                #notice li:nth-of-type(8),
+                #game li:nth-of-type(8),
+                #strategy li:nth-of-type(8),
+                #community li:nth-of-type(8) {
+                    background-color: #e3e2e2;
+                    justify-content: center;
+                    label {
+                        border: none;
+                        width: 53px;
+                        color: #676767;
+                    }
+                    span {
+                        color: #7ea1a6;
+                        font-size: 14px;
+                    }
+                    i {
+                        display: block;
+                        width: 20px;
+                        height: 20px;
+                        background-image: url(https://ossweb-img.qq.com/images/lol/v3/comm-spr.png);
+                        background-position: 97px 110px;
+                        animation: moves 1s infinite paused;
+                    }
+                }
+                .activity {
+                    width: 1360px;
+                    .campaign {
+                        width: 820px;
+                        height: 340px;
+                        .campaign-nav {
+                            h3 {
+                                font-size: 24px;
+                                &::before {
+                                    content: "";
+                                    background-color: #1da6ba;
+                                    height: 28px;
+                                    width: 5px;
+                                }
+                            }
+                            ul {
+                                border-bottom: 1px #e0e2e2 solid;
+                            }
+                        }
+                    }
+                }
+            }
+            .activity {
+                margin-top: 50px;
+                height: 375px;
+                .campaign {
+                    position: relative;
+                    float: left;
+                    width: 800px;
+                    height: 360px;
+                    margin-left: 40px;
+                    .campaign-nav {
+                        width: 800px;
+                        display: flex;
+                        margin-top: 20px;
+                        h3 {
+                            font-size: 24px;
+                            width: 120px;
+                            font-weight: normal;
+                            box-sizing: border-box;
+                            &::before {
+                                content: "";
+                                display: inline-block;
+                                height: 28px;
+                                width: 5px;
+                                background-color: #1da6ba;
+                                margin-right: 10px;
+                                vertical-align: middle;
+                            }
+                        }
+                        .campaign-top {
+                            margin-left: 10px;
+                            border-bottom: 1px #e0e2e2 solid;
+                            display: flex;
+                            list-style: none;
+                            width: 691px;
+                            li {
+                                width: 100px;
+                                height: 39px;
+                                line-height: 39px;
+                                color: #181010;
+                                font-size: 18px;
+                                font-size: 16px;
+                            }
+                            div {
+                                margin-left: auto;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                a {
+                                    text-decoration: none;
+                                    font-size: 12px;
+                                    color: #7ea1a6;
+                                }
+                                i {
+                                    display: block;
+                                    width: 20px;
+                                    height: 20px;
+                                    background-image: url(https://ossweb-img.qq.com/images/lol/v3/comm-spr.png);
+                                    background-position: 97px 110px;
+                                    animation: moves 1s infinite;
+                                }
+                            }
+                            .action {
+                                color: #1da6ba;
+                                &::after {
+                                    content: "";
+                                    display: block;
+                                    width: 67px;
+                                    height: 10px;
+                                    margin-top: -6px;
+                                    background-image: url(https://ossweb-img.qq.com/images/lol/v3/comm-spr.png);
+                                    background-position: 133px 202px;
+                                }
+                            }
+                        }
+                    }
+                    #carry,
+                    #odds,
+                    #long {
+                        position: absolute;
+                        margin-top: 20px;
+                        ul {
+                            width: 800px;
+                            display: flex;
+                            justify-content: space-around;
+                            list-style: none;
+                            li {
+                                width: 193px;
+                                height: 280px;
+                                background-color: #fefefe;
+                                font-size: 12px;
+                                position: relative;
+                                img {
+                                    width: 193px;
+                                    height: 209px;
+                                }
+                                p {
+                                    color: #424242;
+                                    padding-left: 5px;
+                                }
+                                a {
+                                    text-decoration: none;
+                                    color: #1da6ba;
+                                    position: absolute;
+                                    bottom: 5px;
+                                    left: 5px;
+                                }
+                            }
+                        }
+                    }
+                    #carry {
+                        ul {
+                            justify-content: flex-start;
+                            li {
+                                margin-left: 20px;
+                            }
+                            li:nth-of-type(1) {
+                                margin-left: 0px;
+                            }
+                        }
+                    }
+                }
+                .game {
+                    width: 450px;
+                    height: 360px;
+                    float: right;
+                    ul {
+                        width: 450px;
+                        height: 360px;
+                        list-style: none;
+                        li {
+                            float: left;
+                            margin-top: 20px;
+                            margin-left: 10px;
+                            text-align: center;
+                            font-size: 14px;
+                            i {
+                                display: inline-block;
+                                vertical-align: middle;
+                                margin-right: 2px;
+                                animation: scale 1s paused;
+                            }
+                        }
+                        li:nth-of-type(1) {
+                            width: 300px;
+                            height: 168px;
+                            overflow: hidden;
+                        }
+                        li:nth-of-type(2),
+                        li:nth-of-type(3) {
+                            width: 117px;
+                            height: 75px;
+                            line-height: 75px;
+                            background-image: url(https://ossweb-img.qq.com/images/lol/v3/index-spr.png);
+                            background-position: -193px -316px;
+                            color: beige;
+                            font-weight: 700;
+                        }
+                        li:nth-of-type(4),
+                        li:nth-of-type(5),
+                        li:nth-of-type(6),
+                        li:nth-of-type(7),
+                        li:nth-of-type(9),
+                        li:nth-of-type(10) {
+                            line-height: 68px;
+                            width: 100px;
+                            height: 68px;
+                            background-color: #fefefe;
+                            font-size: 12px;
+                        }
+                        li:nth-of-type(4) i {
+                            width: 25px;
+                            height: 19px;
+                            background-image: url(https://ossweb-img.qq.com/images/lol/v3/comm-spr.png);
+                            background-position: -318px -12px;
+                        }
+                        li:nth-of-type(5) i {
+                            width: 20px;
+                            height: 20px;
+                            background-image: url(https://ossweb-img.qq.com/images/lol/v3/comm-spr.png);
+                            background-position: -193px -71px;
+                        }
+                        li:nth-of-type(6) i {
+                            width: 20px;
+                            height: 20px;
+                            background-image: url(https://ossweb-img.qq.com/images/lol/v3/comm-spr.png);
+                            background-position: -218px -71px;
+                        }
+                        li:nth-of-type(7) i {
+                            width: 20px;
+                            height: 20px;
+                            background-image: url(https://ossweb-img.qq.com/images/lol/v3/comm-spr.png);
+                            background-position: -264px -12px;
+                        }
+                        li:nth-of-type(9) i {
+                            width: 20px;
+                            height: 20px;
+                            background-image: url(https://ossweb-img.qq.com/images/lol/v3/comm-spr.png);
+                            background-position: -319px -71px;
+                        }
+                        li:nth-of-type(10) i {
+                            width: 20px;
+                            height: 20px;
+                            background-image: url(https://ossweb-img.qq.com/images/lol/v3/comm-spr.png);
+                            background-position: -375px -12px;
+                        }
+                        li:nth-of-type(8) i {
+                            width: 20px;
+                            height: 20px;
+                            background-image: url(https://ossweb-img.qq.com/images/lol/v3/comm-spr.png);
+                            background-position: -231px -12px;
+                        }
+                        li:nth-of-type(8) {
+                            width: 200px;
+                            height: 68px;
+                            background-color: #fefefe;
+                            line-height: 68px;
+                        }
+                        li:nth-of-type(4):hover,
+                        li:nth-of-type(5):hover,
+                        li:nth-of-type(6):hover,
+                        li:nth-of-type(7):hover,
+                        li:nth-of-type(9):hover,
+                        li:nth-of-type(10):hover,
+                        li:nth-of-type(8):hover {
+                            color: #0da0b4;
+                            box-shadow: 0 0 10px #ccc;
+                        }
+                    }
+                }
+            }
+            .image {
+                margin-top: 40px;
+                margin-left: 40px;
+                .pho {
+                    float: left;
+                    ul {
+                        width: 800px;
+                        height: 240px;
+                        display: flex;
+                        justify-content: space-between;
+                        list-style: none;
+                        li {
+                            width: 380px;
+                            height: 240px;
+                            position: relative;
+                            a {
+                                position: absolute;
+                                left: 10px;
+                                top: 10px;
+                                text-decoration: none;
+                                text-align: center;
+                                line-height: 20px;
+                                display: block;
+                                width: 63px;
+                                height: 20px;
+                                background-color: black;
+                                color: #cdbe91;
+                                font-size: 12px;
+                            }
+                            img {
+                                width: 380px;
+                                height: 240px;
+                                position: absolute;
+                            }
+                            i {
+                                display: block;
+                                height: 100px;
+                                position: absolute;
+                                top: 120px;
+                                background-image: url(https://ossweb-img.qq.com/images/lol/v3/pic-mask-0.png);
+                            }
+                            p {
+                                position: absolute;
+                                left: 10px;
+                            }
+                            p:nth-of-type(1) {
+                                color: #cdbe91;
+                                bottom: 33px;
+                                font-weight: 700;
+                            }
+                            p:nth-of-type(2) {
+                                color: white;
+                                bottom: 10px;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+                .edition {
+                    width: 450px;
+                    float: right;
+                    .left {
+                        float: left;
+                        list-style: none;
+                        height: 240px;
+                        display: flex;
+                        width: 200px;
+                        flex-wrap: wrap;
+                        align-content: space-between;
+                        li,
+                        img {
+                            width: 200px;
+                            height: 110px;
+                        }
+                    }
+                    .right {
+                        width: 220px;
+                        float: right;
+                        list-style: none;
+                        height: 240px;
+                        margin-right: 10px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-content: space-between;
+                        li:nth-of-type(1) {
+                            width: 220px;
+                            height: 170px;
+                            background-image: url(https://img.crawler.qq.com/lolwebschool/0/JAutoCMS_LOLWeb_51be27872e29ac01c08b27ff902f1c33/0);
+                        }
+                        li:nth-of-type(2) {
+                            text-align: center;
+                            line-height: 60px;
+                            width: 220px;
+                            height: 60px;
+                            background-image: url(https://ossweb-img.qq.com/images/lol/v3/index-spr.png);
+                            background-position: -193px -253px;
+                            span {
+                                color: #fff;
+                                width: 100px;
+                                &::before {
+                                    content: "";
+                                    display: inline-block;
+                                    width: 20px;
+                                    height: 10px;
+                                    background-image: url(https://ossweb-img.qq.com/images/lol/v3/index-spr.png);
+                                    background-position: -531px -226px;
+                                    margin-right: 10px;
+                                }
+                                &::after {
+                                    content: "";
+                                    display: inline-block;
+                                    width: 20px;
+                                    height: 10px;
+                                    background-image: url(https://ossweb-img.qq.com/images/lol/v3/index-spr.png);
+                                    background-position: -506px -226px;
+                                    margin-left: 10px;
+                                }
+                                i {
+                                    display: inline-block;
+                                    width: 20px;
+                                    height: 20px;
+                                    background-image: url(https://ossweb-img.qq.com/images/lol/v3/comm-spr.png);
+                                    background-position: -361px -43px;
+                                    vertical-align: middle;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .vision {
+            background-color: rgba(227, 226, 226, 0.5);
+            height: 500px;
+            .video {
+                width: 800px;
+                height: 460px;
+                float: left;
+                .recommend {
+                    width: 800px;
+                    height: 100px;
+                    display: flex;
+                    margin-left: 40px;
+                    padding-top: 40px;
+                    box-sizing: border-box;
+                    h3 {
+                        font-size: 24px;
+                        width: 120px;
+                        font-weight: normal;
+                        box-sizing: border-box;
+                        &::before {
+                            content: "";
+                            display: inline-block;
+                            height: 28px;
+                            width: 5px;
+                            background-color: #1da6ba;
+                            margin-right: 10px;
+                            vertical-align: middle;
+                        }
+                    }
+                    .recommend-top {
+                        height: 39px;
+                        border-bottom: 1px #e0e2e2 solid;
+                        display: flex;
+                        list-style: none;
+                        width: 691px;
+                        margin-left: 10px;
+                        li {
+                            width: 100px;
+                            height: 39px;
+                            line-height: 39px;
+                            color: #181010;
+                            font-size: 18px;
+                            font-size: 16px;
+                        }
+                        div {
+                            margin-left: auto;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            a {
+                                text-decoration: none;
+                                font-size: 12px;
+                                color: #7ea1a6;
+                            }
+                            i {
+                                display: block;
+                                width: 20px;
+                                height: 20px;
+                                background-image: url(https://ossweb-img.qq.com/images/lol/v3/comm-spr.png);
+                                background-position: 97px 110px;
+                                animation: moves 1s infinite;
+                            }
+                        }
+                        .action {
+                            color: #1da6ba;
+                            &::after {
+                                content: "";
+                                display: block;
+                                width: 35px;
+                                height: 10px;
+                                margin-top: -6px;
+                                background-image: url(https://ossweb-img.qq.com/images/lol/v3/comm-spr.png);
+                                background-position: 117px 202px;
+                            }
+                        }
+                    }
+                }
+                #recommendactio,
+                #figures,
+                #recreaction,
+                #match,
+                #instruction {
+                    position: absolute;
+                    ul {
+                        margin-left: 40px;
+                        width: 800px;
+                        list-style: none;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        li {
+                            width: 190px;
+                            height: 185px;
+                            position: relative;
+                            img {
+                                width: 190px;
+                                height: 107px;
+                            }
+                            p {
+                                color: #424242;
+                                font-size: 12px;
+                            }
+                            a {
+                                text-decoration: none;
+                                font-size: 12px;
+                                color: #919091;
+                                position: absolute;
+                                bottom: 15px;
+                            }
+                            a:nth-of-type(1) {
+                                left: 0px;
+                            }
+                            a:nth-of-type(2) {
+                                right: 0px;
+                            }
+                        }
+                        li:hover p {
+                            color: #0da0b4;
+                        }
+                    }
+                }
+            }
+            .special {
+                position: relative;
+                height: 460px;
+                float: right;
+                .short {
+                    width: 450px;
+                    height: 100px;
+                    display: flex;
+                    margin-left: 40px;
+                    padding-top: 40px;
+                    box-sizing: border-box;
+                    h3 {
+                        font-size: 24px;
+                        width: 120px;
+                        font-weight: normal;
+                        box-sizing: border-box;
+                        &::before {
+                            content: "";
+                            display: inline-block;
+                            height: 28px;
+                            width: 5px;
+                            background-color: #1da6ba;
+                            margin-right: 10px;
+                            vertical-align: middle;
+                        }
+                    }
+                    .short-top {
+                        height: 39px;
+                        border-bottom: 1px #e0e2e2 solid;
+                        display: flex;
+                        justify-content: space-between;
+                        list-style: none;
+                        width: 300px;
+                        margin-left: 10px;
+                        li {
+                            line-height: 39px;
+                            color: #676767;
+                            font-size: 16px;
+                        }
+                        .action {
+                            color: #1da6ba;
+                            &::after {
+                                content: "";
+                                display: block;
+                                width: 35px;
+                                height: 10px;
+                                margin-top: -6px;
+                                background-image: url(https://ossweb-img.qq.com/images/lol/v3/comm-spr.png);
+                                background-position: 117px 202px;
+                            }
+                        }
+                    }
+                }
+            }
+            #mon {
+                position: absolute;
+                ul {
+                    margin-left: 40px;
+                    width: 450px;
+                    list-style: none;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    li {
+                        position: relative;
+                        width: 130px;
+                        height: 300px;
+                        img {
+                            width: 130px;
+                            height: 222px;
+                            position: absolute;
+                        }
+                        h4 {
+                            position: absolute;
+                            top: 100px;
+                            left: 30px;
+                            color: white;
+                            font-weight: 800;
+                        }
+                        h5 {
+                            position: absolute;
+                            top: 120px;
+                            left: 15px;
+                            color: white;
+                        }
+                        p {
+                            position: absolute;
+                            top: 230px;
+                            color: #919091;
+                            font-size: 12px;
+                        }
+                        a {
+                            position: absolute;
+                            bottom: 0px;
+                            text-decoration: none;
+                            font-size: 12px;
+                            color: #919091;
+                            i {
+                                display: inline-block;
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 50%;
+                                background-size: 100% 100%;
+                                vertical-align: middle;
+                            }
+                        }
+                    }
+                    li:nth-of-type(1) a i {
+                        background-image: url(https://shp.qpic.cn/cfwebcap/0/0f5da8363f1f148245274a76d81259fa/0?width=200&height=200);
+                    }
+                    li:nth-of-type(2) a i {
+                        background-image: url(http://inews.gtimg.com/newsapp_ls/0/1316847452_200200/0);
+                    }
+                    li:nth-of-type(3) a i {
+                        background-image: url(https://shp.qpic.cn/cfwebcap/0/bd51826bf4e586ce8ffceeec016c88ca/0?width=1085&height=1085);
+                    }
+                }
+            }
+            .btn {
+                position: absolute;
+                bottom: 5px;
+                left: 100px;
+                width: 300px;
+                height: 40px;
+                line-height: 40px;
+                color: #ab8e66;
+                font-size: 16px;
+                background-image: url(https://ossweb-img.qq.com/images/lol/v3/index-spr.png);
+                background-position: -14px -525px;
+                text-align: center;
+                i {
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    background-image: url(https://ossweb-img.qq.com/images/lol/v3/comm-spr.png);
+                    background-position: 414px 133px;
+                    vertical-align: middle;
+                }
+            }
+        }
+        
+        .hero {
+            float: left;
+            width: 1345px;
+            box-sizing: border-box;
+            background-color: rgba(227,226,226,0.6);
+            height: 500px;
+            .sup {
+                margin-left: 40px;
+                width: 1300px;
+                display: flex;
+                margin-top: 20px;
+                h3 {
+                    font-size: 24px;
+                    width: 120px;
+                    font-weight: normal;
+                    box-sizing: border-box;
+                    &::before {
+                        content: "";
+                        display: inline-block;
+                        height: 28px;
+                        width: 5px;
+                        background-color: #1da6ba;
+                        margin-right: 10px;
+                        vertical-align: middle;
+                    }
+                }
+                ul {
+                    margin-left: 10px;
+                    display: flex;
+                    list-style: none;
+                    width: 1100px;
+                    li {
+                        width: 120px;
+                        height: 39px;
+                        line-height: 39px;
+                        color: #181010;
+                        font-size: 18px;
+                        font-size: 16px;
+                        i {
+                            margin-right: 10px;
+                            display: inline-block;
+                            width: 20px;
+                            height: 20px;
+                            background-image: url(https://ossweb-img.qq.com/images/lol/v3/index-spr.png);
+                            background-position: -406px -316px;
+                            vertical-align: middle;
+                        }
+                    }
+                    li:hover i {
+                        background-position: -430px -316px;
+                    }
+                    div {
+                        margin-left: auto;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        a {
+                            text-decoration: none;
+                            font-size: 12px;
+                            color: #7ea1a6;
+                        }
+                        i {
+                            display: block;
+                            width: 20px;
+                            height: 20px;
+                            background-image: url(https://ossweb-img.qq.com/images/lol/v3/comm-spr.png);
+                            background-position: 97px 110px;
+                            animation: moves 1s infinite;
+                        }
+                    }
+                }
+            }
+            .allHero {
+                margin-top: 20px;
+                margin-left: 40px;
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    list-style: none;
+                    li {
+                        margin-right: 10px;
+                        width: 89px;
+                        height: 130px;
+                        p {
+                            font-size: 12px;
+                        }
+                        img{
+                            width: 80px;
+                            height: 90px;
+                        }
+                    }
+                }
+            }
+        }
+        .foot{
+            float: left;
+            background-color: rgb(227,226,226);
+            width: 1345px;
+            box-sizing: border-box;
+            height: 300px;
+            color: #494949;
+            .foot-left{
+                float: left;
+                width: 500px;
+                text-align: center;
+                line-height: 300px;
+                i{
+                    display: inline-block;
+                }
+                i:nth-of-type(1){
+                    width: 189px;
+                    height: 39px;
+                    background-image: url(https://ossweb-img.qq.com/images/lol/v3/topfoot-spr.png);
+                    background-position: -216px 0;
+                }
+                i:nth-of-type(2){
+                    width: 83px;
+                    height: 56px;
+                    background-image: url(https://ossweb-img.qq.com/images/lol/v3/topfoot-spr.png);
+                    background-position: -216px -84px;
+                }
+            }
+            .foot-right{
+                float: right;
+                list-style: none;
+                width:800px;
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 40px;
+                color: #9f9378;
+                height: 200px;
+                
+                li{
+                    font-size: 12px;
+                    border-right: 1px solid gainsboro;
+                    margin-right: 10px;
+                    padding-right: 10px;
+                    
+                    
+                }
+                li:nth-of-type(8){
+                    border-right: 0px solid transparent;
+                }
+                li:nth-of-type(9),
+                    li:nth-of-type(10),
+                    li:nth-of-type(11),
+                    li:nth-of-type(12),
+                    li:nth-of-type(13),
+                    li:nth-of-type(14),
+                    li:nth-of-type(15),
+                    li:nth-of-type(16){
+                        border-right: 0px solid transparent;
+                        width: 100%;
+                       
+                    }
+                    li:nth-of-type(14),
+                    li:nth-of-type(15){
+                        a{
+                            text-decoration: none;
+                            color: #9f9378;
+                        }
+                    }
+            }
+        }
+        

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="柱形图.css" />
+	</head>
+
+	<body>
+		<div class="back">
+			<div class="card">
+				<h2>STEPS</h2>
+				<p>THIS WEEK</p>
+				<div class="box">
+					<span><i><label>M</label></i></span>
+					<span><i><label>X</label></i></span>
+					<span><i><label>T</label></i></span>
+					<span><i><label>W</label></i></span>
+					<span><i><label>F</label></i></span>
+					<span><i><label>S</label></i></span>
+				</div>
+				<h3>93,000</h3>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var card = document.querySelector(".card");
+		var h2 = document.querySelector("h2");
+		var p = document.querySelector("p");
+		flag = true;
+		card.onclick = function() {
+			if(flag) {
+				card.className = "card active";
+				h2.className = "action";
+				p.className = "action";
+				flag = false;
+			} else {
+				card.className = "card";
+				flag = true;
+				h2.className = "";
+				p.className = "";
+
+			}
+		}
+	</script>
+
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#herder{
+				width: 600px;
+				height: 600px;
+				position: relative;
+				margin: auto auto;
+				overflow: hidden;
+			}
+			#img{
+				width: 4200px;
+				height: 560px;
+				position: absolute;
+				margin: 0;
+				top: 0;
+				left: 0;
+			}
+			img{
+				width: 600px;
+				height: 570px;
+				float: left;
+			}
+			#sub ul{
+				padding: 0;
+				margin: 0;
+				margin-left: 250px;
+			}
+			#sub{
+				height: 30px;
+				width: 600px;
+				position: absolute;
+				bottom: 0;
+				background-color: rgba(0,0,0,.5);
+				margin: 0;
+				padding: 0;
+			}
+			#sub ul li{
+				width: 18px;
+				height: 18px;
+				border: 1px solid white;
+				list-style: none;
+				border-radius: 50%;
+				float: left;
+				text-align: center;
+				font-size: 13px;
+				margin-top: 4px;
+				margin-left: 4px;
+				color: white;
+				background-color: darkgray;
+			}
+			#sign{
+				position: absolute;
+				width: 600px;
+				display: none;
+			}
+			#sign strong{
+				width: 40px;
+				height: 50px;
+				font-size: 30px;
+				font-family: "黑体";
+				margin-top: 250px;
+				text-align: center;
+				padding-top: 10px;
+				background-color: gray;
+				
+			}
+			div strong:nth-of-type(2){
+				float: right;
+			}
+			div strong:nth-of-type(1){
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="herder">
+			<div id="img" style="left: 0px;">
+				<img src="img/1.jpg" />
+				<img src="img/2.jpg" />
+				<img src="img/3.jpg" />
+				<img src="img/4.jpg" />
+				<img src="img/5.jpg" />
+				<img src="img/6.jpg" />
+				<img src="img/7.jpg" />
+			</div>
+			<div id="sub">
+				<ul>
+					<li onmouseenter="mouse(0)">1</li>
+					<li onmouseenter="mouse(1)">2</li>
+					<li onmouseenter="mouse(2)">3</li>
+					<li onmouseenter="mouse(3)">4</li>
+					<li onmouseenter="mouse(4)">5</li>
+					<li onmouseenter="mouse(5)">6</li>
+					<li onmouseenter="mouse(6)">7</li>
+				</ul>
+			</div>
+			<div id="sign" >
+				<strong>>></strong>
+				<strong><<</strong>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var herder=document.getElementById("herder");
+		var sign=document.getElementById("sign");
+		var sub=document.getElementById("sub");
+		var imgs=document.getElementById("img");
+		var li=document.getElementsByTagName("li");
+		//获取sign下的子元素
+		var sign1=sign.children[0];
+		var sign2=sign.children[1];
+		var newLeft = 0;
+		li[0].style.background = "red"
+		//图片向左轮播
+		function Left(){
+			if(imgs.style.left=="-3600px"){
+				newLeft = 0;
+			}else{
+				newLeft=parseInt(imgs.style.left)-600;
+			}
+			imgs.style.left=newLeft+"px";
+			//图片每变化一次，下面的数字的背景也随它改变
+			j = Math.abs(newLeft / 600)
+			for (var i = 0; i < 7; i++) {
+				li[i].style.background = "darkgray"
+			}
+			if(j == 7){
+				j = 0
+			}
+			li[j].style.background = "red"
+		}
+		//<<的单击事件
+		sign1.onclick=function(){
+			Left();
+		}
+		//>>的单击事件
+		sign2.onclick=function(){
+			//向右轮播
+			if(imgs.style.left=="0px"){
+				newLeft = -3600;
+			}else{
+				newLeft=parseInt(imgs.style.left)+600;
+			}
+			imgs.style.left=newLeft+"px";
+			j = Math.abs(newLeft / 600)
+			for (var i = 0; i < 7; i++) {
+				li[i].style.background = "darkgray"
+			}
+			if(j == 7){
+				j = 0
+			}
+			li[j].style.background = "red"
+		}
+		
+		//定时器
+		var setIntervald = null;
+		function outPlay(){
+			setIntervald = setInterval(function (){
+			Left();
+		},2000)
+		}
+		outPlay();
+		//当鼠标移除，sign隐藏，并启动定时器
+		herder.onmouseleave=function(){
+			sign.style.display="none";
+			outPlay();
+		}
+		//当鼠标进入是，sign显示，并停止定时器
+		herder.onmouseenter=function (){
+			sign.style.display="block";
+			clearInterval(setIntervald);
+			sign.style.cursor="pointer";
+		}
+		//移动到li上时图片和背景改变
+		function mouse(x){
+			clearInterval(setIntervald);
+			newLeft = x * -600;
+			for (var i = 0;i < 7 ; i ++) {
+				li[i].style.background="darkgray";
+			}
+			li[x].style.background="red";
+			imgs.style.left=newLeft+"px";
+		}
+	</script>
+</html>

@@ -1,0 +1,35 @@
+.x-nav .navbar .container-fluid .navbar-header button{
+	width: 100px;
+	height: 40px;
+	background-color: yellow;
+	border-color: transparent;
+	
+}
+.x-nav .navbar{
+	border: none;
+	background: transparent;
+	display: flex;
+	flex-grow: 1;
+	justify-content: center;
+}
+.x-nav .navbar .container-fluid {
+	width: 100%;
+	text-align: center;
+	/*background: black;*/
+}
+
+.x-nav .navbar .container-fluid .navbar-header span{
+	border:1px solid white;
+	color: white;
+	float: right;
+}
+.x-span{
+	border: none !important;
+	float: left !important;
+}
+.x-nav .navbar .container-fluid .collapse a{
+	font-family: "Josefin Sans","楷体";
+	font-weight: bold;
+	font-size: 16px;
+	/*color: white;*/
+}
