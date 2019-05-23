@@ -1,0 +1,350 @@
+{
+    "cinemas": [{
+            "id": 25644,
+            "mark": 0,
+            "nm": "华夏星光国际影城(新桥店)",
+            "sellPrice": "19.9",
+            "addr": "宝安区新桥街道中心路36号新桥文化艺术中心二层（市民广场旁）",
+            "distance": "62.3km",
+            "tag": {
+                "allowRefund": 0,
+                "buyout": 0,
+                "cityCardTag": 0,
+                "deal": 0,
+                "endorse": 0,
+                "hallTypeVOList": [],
+                "sell": 1,
+                "snack": 1,
+                "vipTag": "折扣卡"
+            },
+            "promotion": {
+                "cardPromotionTag": "开卡特惠，首单2张立减2元"
+            }
+        },
+        {
+            "id": 17068,
+            "mark": 0,
+            "nm": "传奇影城",
+            "sellPrice": "19.9",
+            "addr": "宝安区西乡街道后瑞地铁站B出口100处（壹航城购物中心T2栋）",
+            "distance": "71.2km",
+            "tag": {
+                "allowRefund": 1,
+                "buyout": 0,
+                "cityCardTag": 0,
+                "deal": 0,
+                "endorse": 1,
+                "hallTypeVOList": [],
+                "sell": 1,
+                "snack": 0
+            },
+            "promotion": {}
+        },
+        {
+            "id": 25415,
+            "mark": 0,
+            "nm": "万豪4k国际影城",
+            "sellPrice": "19.9",
+            "addr": "宝安区西乡街道华广集团4楼",
+            "distance": "78.2km",
+            "tag": {
+                "allowRefund": 1,
+                "buyout": 0,
+                "cityCardTag": 0,
+                "deal": 0,
+                "endorse": 1,
+                "hallTypeVOList": [],
+                "sell": 1,
+                "snack": 1,
+                "vipTag": "折扣卡"
+            },
+            "promotion": {
+                "cardPromotionTag": "限时¥36.9促销开卡，首单更优惠,开卡即赠价值¥48元礼包"
+            }
+        },
+        {
+            "id": 8318,
+            "mark": 0,
+            "nm": "博纳国际影城(皇庭店)",
+            "sellPrice": "19.9",
+            "addr": "福田区福华三路皇庭广场b1-3（会展中心c出口）",
+            "distance": "93.7km",
+            "tag": {
+                "allowRefund": 0,
+                "buyout": 0,
+                "cityCardTag": 0,
+                "deal": 0,
+                "endorse": 1,
+                "hallType": [
+                    "杜比全景声厅"
+                ],
+                "hallTypeVOList": [{
+                    "name": "杜比全景声厅",
+                    "url": ""
+                }],
+                "sell": 1,
+                "snack": 1,
+                "vipTag": "折扣卡"
+            },
+            "promotion": {
+                "cardPromotionTag": "限时¥36.9促销开卡，首单更优惠,开卡即赠价值¥48元礼包"
+            }
+        },
+        {
+            "id": 15592,
+            "mark": 0,
+            "nm": "非凡数字影城",
+            "sellPrice": "20",
+            "addr": "宝安区石岩街道塘头大道39号一楼（邮政银行旁）",
+            "distance": "73.2km",
+            "tag": {
+                "allowRefund": 1,
+                "buyout": 0,
+                "cityCardTag": 0,
+                "deal": 0,
+                "endorse": 1,
+                "hallTypeVOList": [],
+                "sell": 1,
+                "snack": 1,
+                "vipTag": "折扣卡"
+            },
+            "promotion": {
+                "cardPromotionTag": "开卡特惠，首单2张立减10元"
+            }
+        },
+        {
+            "id": 16706,
+            "mark": 0,
+            "nm": "中影星趴影城(海上世界店)",
+            "sellPrice": "22",
+            "addr": "南山区招商街道蛇口海上世界A区三层",
+            "distance": "89.6km",
+            "tag": {
+                "allowRefund": 0,
+                "buyout": 0,
+                "cityCardTag": 0,
+                "deal": 0,
+                "endorse": 0,
+                "hallTypeVOList": [],
+                "sell": 1,
+                "snack": 1,
+                "vipTag": "折扣卡"
+            },
+            "promotion": {}
+        },
+        {
+            "id": 17317,
+            "mark": 0,
+            "nm": "期遇·UUE巨幕影城(公明店)",
+            "sellPrice": "22.9",
+            "addr": "宝安区公明街道合水口马田北路31号新天地购物广场3楼",
+            "distance": "60.6km",
+            "tag": {
+                "allowRefund": 0,
+                "buyout": 0,
+                "cityCardTag": 0,
+                "deal": 0,
+                "endorse": 1,
+                "hallType": [
+                    "巨幕厅"
+                ],
+                "hallTypeVOList": [{
+                    "name": "巨幕厅",
+                    "url": ""
+                }],
+                "sell": 1,
+                "snack": 1,
+                "vipTag": "折扣卡"
+            },
+            "promotion": {
+                "cardPromotionTag": "开卡特惠，首单2张立减10元"
+            }
+        },
+        {
+            "id": 25316,
+            "mark": 0,
+            "nm": "星越巨幕影城(杜比全景声公明店)",
+            "sellPrice": "22.9",
+            "addr": "宝安区公明马田街道新庄社区大东明广场13栋",
+            "distance": "63.8km",
+            "tag": {
+                "allowRefund": 1,
+                "buyout": 0,
+                "cityCardTag": 0,
+                "deal": 0,
+                "endorse": 1,
+                "hallType": [
+                    "杜比全景声厅",
+                    "巨幕厅"
+                ],
+                "hallTypeVOList": [{
+                        "name": "杜比全景声厅",
+                        "url": ""
+                    },
+                    {
+                        "name": "巨幕厅",
+                        "url": ""
+                    }
+                ],
+                "sell": 1,
+                "snack": 1,
+                "vipTag": "折扣卡"
+            },
+            "promotion": {
+                "cardPromotionTag": "开卡特惠，首单2张立减4元"
+            }
+        },
+        {
+            "id": 6913,
+            "mark": 0,
+            "nm": "大地影院(民治店)",
+            "sellPrice": "22.9",
+            "addr": "龙华区民治大道与布龙路交汇佐阾香颂购物中心1楼（民治大道与布龙路交汇处）",
+            "distance": "84.2km",
+            "tag": {
+                "allowRefund": 0,
+                "buyout": 0,
+                "cityCardTag": 0,
+                "deal": 0,
+                "endorse": 0,
+                "hallTypeVOList": [],
+                "sell": 1,
+                "snack": 1,
+                "vipTag": "折扣卡"
+            },
+            "promotion": {
+                "cardPromotionTag": "限时¥19.9促销开卡，首单更优惠,开卡即赠价值¥10元礼包"
+            }
+        },
+        {
+            "id": 12882,
+            "mark": 0,
+            "nm": "华夏星光国际影城(沙井店)",
+            "sellPrice": "23",
+            "addr": "宝安区沙井街道中心路深圳书城（华润万佳旁50米）",
+            "distance": "61.8km",
+            "tag": {
+                "allowRefund": 1,
+                "buyout": 0,
+                "cityCardTag": 0,
+                "deal": 0,
+                "endorse": 1,
+                "hallType": [
+                    "杜比全景声厅",
+                    "4K厅",
+                    "巨幕厅"
+                ],
+                "hallTypeVOList": [{
+                        "name": "杜比全景声厅",
+                        "url": ""
+                    },
+                    {
+                        "name": "4K厅",
+                        "url": ""
+                    },
+                    {
+                        "name": "巨幕厅",
+                        "url": ""
+                    }
+                ],
+                "sell": 1,
+                "snack": 1,
+                "vipTag": "折扣卡"
+            },
+            "promotion": {
+                "cardPromotionTag": "开卡特惠，首单2张立减4元"
+            }
+        },
+        {
+            "id": 13869,
+            "mark": 0,
+            "nm": "万厅国际影城公明店",
+            "sellPrice": "23",
+            "addr": "宝安区光明新区公明街道合水口社区松白路中泰大厦三楼",
+            "distance": "62km",
+            "tag": {
+                "allowRefund": 0,
+                "buyout": 0,
+                "cityCardTag": 0,
+                "deal": 0,
+                "endorse": 1,
+                "hallTypeVOList": [],
+                "sell": 1,
+                "snack": 1,
+                "vipTag": "折扣卡"
+            },
+            "promotion": {
+                "cardPromotionTag": "开卡特惠，首单2张立减4元"
+            }
+        },
+        {
+            "id": 11492,
+            "mark": 0,
+            "nm": "东影南国国际影城(福永唐美店)",
+            "sellPrice": "23",
+            "addr": "宝安区凤塘大道523号唐美商场4楼",
+            "distance": "62.9km",
+            "tag": {
+                "allowRefund": 1,
+                "buyout": 0,
+                "cityCardTag": 0,
+                "deal": 0,
+                "endorse": 1,
+                "hallType": [
+                    "CGS中国巨幕厅"
+                ],
+                "hallTypeVOList": [{
+                    "name": "CGS中国巨幕厅",
+                    "url": ""
+                }],
+                "sell": 1,
+                "snack": 1,
+                "vipTag": "折扣卡"
+            },
+            "promotion": {
+                "cardPromotionTag": "开卡特惠，首单2张立减6元"
+            }
+        }
+    ],
+    "random": 1558062076223,
+    "paging": {
+        "hasMore": true,
+        "limit": 12,
+        "offset": 0,
+        "total": 292
+    },
+    "showDays": {
+        "dates": [{
+                "date": "2019-05-17",
+                "isPredate": 0
+            },
+            {
+                "date": "2019-05-18",
+                "isPredate": 0
+            },
+            {
+                "date": "2019-05-19",
+                "isPredate": 0
+            },
+            {
+                "date": "2019-05-20",
+                "isPredate": 0
+            },
+            {
+                "date": "2019-05-21",
+                "isPredate": 0
+            },
+            {
+                "date": "2019-05-22",
+                "isPredate": 0
+            },
+            {
+                "date": "2019-05-23",
+                "isPredate": 0
+            }
+
+        ]
+
+    }
+
+}
